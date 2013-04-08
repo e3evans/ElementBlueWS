@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><launchConfiguration type="com.ibm.ws.ast.st.v8.core.batchProcessLaunchConfigurationType">
+<stringAttribute key="launchMode" value="run"/>
+<stringAttribute key="wasInstallPath" value="C:/IBM/WebSphere8/wp_profile"/>
+<stringAttribute key="wasServerName" value="WebSphere_Portal"/>
+</launchConfiguration>

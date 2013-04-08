@@ -4,15 +4,21 @@
 <workingSet editPageId="com.ibm.etools.aries.fragmentBundleWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1365449192131_1" label="OSGi Fragment Bundle Projects" name="OSGi Fragment Bundle Projects"/>
 <workingSet editPageId="com.ibm.etools.aries.applicationWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1365449192133_2" label="OSGi Application Projects" name="OSGi Application Projects"/>
 <workingSet editPageId="com.ibm.etools.aries.compositeBundleWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1365449192136_3" label="OSGi Composite Bundle Projects" name="OSGi Composite Bundle Projects"/>
-<workingSet editPageId="com.ibm.etools.j2ee.ui.EARWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1365449192139_4" label="EAR Projects" name="EARWorkingSetPage.name"/>
+<workingSet editPageId="com.ibm.etools.j2ee.ui.EARWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1365449192139_4" label="EAR Projects" name="EARWorkingSetPage.name">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/PDFBrowserEAR" type="4"/>
+</workingSet>
 <workingSet editPageId="com.ibm.etools.j2ee.ui.AppClientWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1365449192143_5" label="Application Client Projects" name="AppClientWorkingSetPage.name"/>
 <workingSet editPageId="com.ibm.etools.j2ee.ui.EjbWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1365449192148_6" label="EJB Projects" name="EjbWorkingSetPage.name"/>
 <workingSet editPageId="com.ibm.etools.j2ee.ui.ConnectorWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1365449192153_7" label="Connector Projects" name="ConnectorWorkingSetPage.name"/>
-<workingSet editPageId="com.ibm.etools.j2ee.ui.WebWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1365449192158_8" label="Web Projects" name="NewWebWorkingSetPage.name"/>
+<workingSet editPageId="com.ibm.etools.j2ee.ui.WebWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1365449192158_8" label="Web Projects" name="NewWebWorkingSetPage.name">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/PDFBrowser" type="4"/>
+</workingSet>
 <workingSet editPageId="com.ibm.etools.j2ee.ui.JPAWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1365449192165_9" label="JPA Projects" name="JPAWorkingSet.name"/>
 <workingSet editPageId="com.ibm.etools.j2ee.ui.UtilWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1365449192172_10" label="Utility Projects" name="WS_UTIL"/>
 <workingSet editPageId="com.ibm.etools.j2ee.ui.WebFragmentWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1365449192183_11" label="Web Fragment Projects" name="WebFragmentWorkingSetPage.name"/>
-<workingSet editPageId="com.ibm.etools.project.OthersWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1365449192191_12" label="Uncategorized Projects" name="OthersWorkingSet.name"/>
+<workingSet editPageId="com.ibm.etools.project.OthersWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1365449192191_12" label="Uncategorized Projects" name="OthersWorkingSet.name">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Servers" type="4"/>
+</workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1365449192250_13" label="Multiple Working Sets" name="Aggregate:OSGi Bundle Projects:OSGi Fragment Bundle Projects:OSGi Application Projects:OSGi Composite Bundle Projects:EARWorkingSetPage.name:AppClientWorkingSetPage.name:EjbWorkingSetPage.name:ConnectorWorkingSetPage.name:NewWebWorkingSetPage.name:JPAWorkingSet.name:WS_UTIL:WebFragmentWorkingSetPage.name:OthersWorkingSet.name:">
 <workingSet IMemento.internal.id="OSGi Bundle Projects"/>
 <workingSet IMemento.internal.id="OSGi Fragment Bundle Projects"/>
@@ -28,4 +34,5 @@
 <workingSet IMemento.internal.id="WebFragmentWorkingSetPage.name"/>
 <workingSet IMemento.internal.id="OthersWorkingSet.name"/>
 </workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1365449464427_14" label="Window Working Set" name="Aggregate for window 1365449464427"/>
 </workingSetManager>
