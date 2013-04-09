@@ -165,3 +165,798 @@ HandlerActivation(commandId=org.eclipse.ui.edit.paste,
 HandlerActivation(commandId=org.eclipse.ui.edit.paste,
 	handler=ActionHandler(org.eclipse.ui.console.actions.TextViewerAction@6728b5bc),
 	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@9e0862bc,ActivePartExpression(org.eclipse.ui.internal.console.ConsoleView@cc73f361)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@b19a3e27)),sourcePriority=1064961)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:02:16.798
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:02:16.798
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.toggleShowWhitespaceCharacters':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.toggleShowWhitespaceCharacters,
+	handler=ActionHandler(org.eclipse.ui.texteditor.ShowWhitespaceCharactersAction@c126239),
+	expression=AndExpression(LegacyEditorActionBarExpression(com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@b19a3e27)),sourcePriority=4210689)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.toggleShowWhitespaceCharacters,
+	handler=ActionHandler(org.eclipse.ui.texteditor.ShowWhitespaceCharactersAction@c126239),
+	expression=AndExpression(LegacyEditorActionBarExpression(com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@b19a3e27)),sourcePriority=4210689)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:02:16.798
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.toggleBlockSelectionMode':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.toggleBlockSelectionMode,
+	handler=ActionHandler(org.eclipse.ui.texteditor.BlockSelectionModeToggleAction@60e31fa3),
+	expression=AndExpression(LegacyEditorActionBarExpression(com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@b19a3e27)),sourcePriority=4210689)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.toggleBlockSelectionMode,
+	handler=ActionHandler(org.eclipse.ui.texteditor.BlockSelectionModeToggleAction@60e31fa3),
+	expression=AndExpression(LegacyEditorActionBarExpression(com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@b19a3e27)),sourcePriority=4210689)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:02:16.798
+!MESSAGE Conflict for 'org.eclipse.ui.edit.findReplace':
+HandlerActivation(commandId=org.eclipse.ui.edit.findReplace,
+	handler=ActionHandler(org.eclipse.ui.texteditor.FindReplaceAction@7b542c37),
+	expression=AndExpression(LegacyEditorActionBarExpression(com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@b19a3e27)),sourcePriority=4210689)
+HandlerActivation(commandId=org.eclipse.ui.edit.findReplace,
+	handler=ActionHandler(org.eclipse.ui.texteditor.FindReplaceAction@7b542c37),
+	expression=AndExpression(LegacyEditorActionBarExpression(com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@b19a3e27)),sourcePriority=4210689)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:02:41.994
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:02:41.994
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.copyLineDown':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.copyLineDown,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.MoveLinesAction@e6c9b3e)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/src/com/usda/controllers/EditDefaultsController.java - Rational® Application Developer for WebSphere® Software},null,PartSite(id=org.eclipse.jdt.ui.CompilationUnitEditor,pluginId=org.eclipse.jdt.ui,registeredName=Java Editor,hashCode=-258747071)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.copyLineDown,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.jdt.internal.ui.javaeditor.JavaMoveLinesAction@510dc951)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/src/com/usda/controllers/EditDefaultsController.java - Rational® Application Developer for WebSphere® Software},null,PartSite(id=org.eclipse.jdt.ui.CompilationUnitEditor,pluginId=org.eclipse.jdt.ui,registeredName=Java Editor,hashCode=-258747071)),sourcePriority=67113984)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:02:41.994
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.goto.lineStart':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.goto.lineStart,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.AbstractTextEditor$LineStartAction@713275a3)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/src/com/usda/controllers/EditDefaultsController.java - Rational® Application Developer for WebSphere® Software},null,PartSite(id=org.eclipse.jdt.ui.CompilationUnitEditor,pluginId=org.eclipse.jdt.ui,registeredName=Java Editor,hashCode=-258747071)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.goto.lineStart,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.jdt.internal.ui.javaeditor.JavaEditor$SmartLineStartAction@864b028)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/src/com/usda/controllers/EditDefaultsController.java - Rational® Application Developer for WebSphere® Software},null,PartSite(id=org.eclipse.jdt.ui.CompilationUnitEditor,pluginId=org.eclipse.jdt.ui,registeredName=Java Editor,hashCode=-258747071)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:04:13.745
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:04:13.746
+!MESSAGE Conflict for 'org.eclipse.ui.edit.delete':
+HandlerActivation(commandId=org.eclipse.ui.edit.delete,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.TextOperationAction@a82841e7)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/edit.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=1984512637)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.delete,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.internal.actions.override.HookAction@bea81c70)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/edit.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=1984512637)),sourcePriority=67113984)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:04:13.746
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.goto.lineEnd':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.goto.lineEnd,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.AbstractTextEditor$LineEndAction@3d873689)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/edit.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=1984512637)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.goto.lineEnd,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.TextNavigationAction@a505f5c9)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/edit.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=1984512637)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:04:16.430
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:04:16.430
+!MESSAGE Conflict for 'com.ibm.etools.webedit.editor.actions.SplitVertically':
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.SplitVertically,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.ModeChangeOrientationAction@b96b4272)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.SplitVertically,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.ModeChangeOrientationAction@b96b4272)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:04:16.430
+!MESSAGE Conflict for 'com.ibm.etools.webedit.editor.actions.DecreaseIndent':
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.DecreaseIndent,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@41a8b630)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.DecreaseIndent,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@41a8b630)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:04:16.430
+!MESSAGE Conflict for 'org.eclipse.ui.edit.selectAll':
+HandlerActivation(commandId=org.eclipse.ui.edit.selectAll,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.internal.actions.override.HookAction@e3e64bb5)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.selectAll,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.internal.actions.override.HookAction@bbf27cd3)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:04:16.430
+!MESSAGE Conflict for 'com.ibm.etools.webedit.editor.actions.Attributes':
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.Attributes,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.ShowPropertyAction@b0722d56)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.Attributes,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.ShowPropertyAction@b0722d56)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:04:16.430
+!MESSAGE Conflict for 'com.ibm.etools.webedit.editor.actions.InsertH1':
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.InsertH1,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@5036b3a4)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.InsertH1,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@5036b3a4)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:04:16.430
+!MESSAGE Conflict for 'com.ibm.etools.webedit.editor.actions.InsertH2':
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.InsertH2,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@f6da0eb9)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.InsertH2,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@f6da0eb9)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:04:16.430
+!MESSAGE Conflict for 'com.ibm.etools.webedit.editor.actions.InsertTable':
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.InsertTable,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.InsertTableAction@19534623)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.InsertTable,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.InsertTableAction@19534623)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:04:16.430
+!MESSAGE Conflict for 'com.ibm.etools.spellcheck':
+HandlerActivation(commandId=com.ibm.etools.spellcheck,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.SedSpellCheckAction@1008ede2)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+HandlerActivation(commandId=com.ibm.etools.spellcheck,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.SedSpellCheckAction@1008ede2)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:04:16.430
+!MESSAGE Conflict for 'com.ibm.etools.webedit.editor.actions.TableAddRowAbove':
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.TableAddRowAbove,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@9717c2c7)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.TableAddRowAbove,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@9717c2c7)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:04:24.405
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:04:24.406
+!MESSAGE Conflict for 'com.ibm.etools.webedit.editor.actions.TableAddColumnLeft':
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.TableAddColumnLeft,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@fbb31ffe)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/edit.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=1984512637)),sourcePriority=67113984)
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.TableAddColumnLeft,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@fbb31ffe)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/edit.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=1984512637)),sourcePriority=67113984)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:04:24.406
+!MESSAGE Conflict for 'com.ibm.etools.webedit.editor.actions.InsertCtrlSpace':
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.InsertCtrlSpace,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.InsertSpecialCharDirectAction@8b321e0b)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/edit.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=1984512637)),sourcePriority=67113984)
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.InsertCtrlSpace,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.InsertSpecialCharDirectAction@8b321e0b)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/edit.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=1984512637)),sourcePriority=67113984)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:04:24.406
+!MESSAGE Conflict for 'com.ibm.etools.webedit.editor.actions.LayoutSelectCell':
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.LayoutSelectCell,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.EditFreelayAction@1bb920ee)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/edit.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=1984512637)),sourcePriority=67113984)
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.LayoutSelectCell,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.EditFreelayAction@1bb920ee)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/edit.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=1984512637)),sourcePriority=67113984)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:04:24.406
+!MESSAGE Conflict for 'com.ibm.etools.webedit.editor.actions.NextPane':
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.NextPane,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.ModeChangeNextPaneAction@ef982e3c)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/edit.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=1984512637)),sourcePriority=67113984)
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.NextPane,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.ModeChangeNextPaneAction@ef982e3c)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/edit.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=1984512637)),sourcePriority=67113984)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:04:24.406
+!MESSAGE Conflict for 'com.ibm.etools.webedit.editor.actions.InsertH4':
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.InsertH4,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@d1037cd1)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/edit.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=1984512637)),sourcePriority=67113984)
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.InsertH4,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@d1037cd1)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/edit.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=1984512637)),sourcePriority=67113984)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:04:24.406
+!MESSAGE Conflict for 'com.ibm.etools.webedit.editor.actions.InsertLink':
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.InsertLink,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.InsertLinkAction@d1fdf94b)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/edit.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=1984512637)),sourcePriority=67113984)
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.InsertLink,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.InsertLinkAction@d1fdf94b)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/edit.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=1984512637)),sourcePriority=67113984)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:04:24.406
+!MESSAGE Conflict for 'com.ibm.etools.webedit.editor.actions.AlignHorizontalCenter':
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.AlignHorizontalCenter,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@a8c1d835)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/edit.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=1984512637)),sourcePriority=67113984)
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.AlignHorizontalCenter,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@a8c1d835)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/edit.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=1984512637)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:04:55.956
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:04:55.956
+!MESSAGE Conflict for 'org.eclipse.ui.navigate.previous':
+HandlerActivation(commandId=org.eclipse.ui.navigate.previous,
+	handler=ActionHandler(org.eclipse.ui.texteditor.GotoAnnotationAction@de546747),
+	expression=AndExpression(LegacyEditorActionBarExpression(com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@b19a3e27)),sourcePriority=4210689)
+HandlerActivation(commandId=org.eclipse.ui.navigate.previous,
+	handler=ActionHandler(org.eclipse.ui.texteditor.GotoAnnotationAction@de546747),
+	expression=AndExpression(LegacyEditorActionBarExpression(com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@b19a3e27)),sourcePriority=4210689)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.060
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.060
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.folding.collapse_all':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.folding.collapse_all,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.TextOperationAction@4b632508)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.folding.collapse_all,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.TextOperationAction@4b632508)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.061
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.062
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.shiftLeft':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.shiftLeft,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.ShiftAction@1c0ac097)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.shiftLeft,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.ShiftAction@1c0ac097)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.062
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.062
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.changeEncoding':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.changeEncoding,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.ChangeEncodingAction@4e1182d4)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.changeEncoding,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.ChangeEncodingAction@4e1182d4)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.063
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.064
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.moveLineDown':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.moveLineDown,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.MoveLinesAction@705d2eae)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.moveLineDown,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.MoveLinesAction@705d2eae)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.065
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.065
+!MESSAGE Conflict for 'org.eclipse.ui.edit.findIncrementalReverse':
+HandlerActivation(commandId=org.eclipse.ui.edit.findIncrementalReverse,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.IncrementalFindAction@6997da1d)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.findIncrementalReverse,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.IncrementalFindAction@6997da1d)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.066
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.066
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.deleteNext':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.deleteNext,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.TextNavigationAction@18f6a1e6)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.deleteNext,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.TextNavigationAction@18f6a1e6)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.067
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.067
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.goto.wordPrevious':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.goto.wordPrevious,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.TextNavigationAction@63ce37ba)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.goto.wordPrevious,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.TextNavigationAction@63ce37ba)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.068
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.068
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.select.lineEnd':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.select.lineEnd,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.AbstractTextEditor$LineEndAction@b3a2caa8)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.select.lineEnd,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.AbstractTextEditor$LineEndAction@b3a2caa8)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.069
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.069
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.goto.lineDown':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.goto.lineDown,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.TextNavigationAction@53e67ae3)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.goto.lineDown,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.TextNavigationAction@53e67ae3)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.069
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.070
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.select.lineUp':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.select.lineUp,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.TextNavigationAction@15f605f3)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.select.lineUp,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.TextNavigationAction@15f605f3)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.070
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.070
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.set.mark':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.set.mark,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.MarkAction@af6554b0)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.set.mark,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.MarkAction@af6554b0)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.072
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.072
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.upperCase':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.upperCase,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.CaseAction@bf84e164)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.upperCase,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.CaseAction@bf84e164)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.073
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.073
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.deleteNextWord':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.deleteNextWord,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.TextNavigationAction@a20d6acc)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.deleteNextWord,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.TextNavigationAction@a20d6acc)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.074
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.074
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.cut.line.to.end':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.cut.line.to.end,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.DeleteLineAction@404cc29c)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.cut.line.to.end,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.DeleteLineAction@404cc29c)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.075
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.075
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.select.pageDown':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.select.pageDown,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.TextNavigationAction@c2724c06)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.select.pageDown,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.TextNavigationAction@c2724c06)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.078
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.078
+!MESSAGE Conflict for 'org.eclipse.ui.edit.findNext':
+HandlerActivation(commandId=org.eclipse.ui.edit.findNext,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.FindNextAction@234e0883)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.findNext,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.FindNextAction@234e0883)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.079
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.079
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.copyLineUp':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.copyLineUp,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.MoveLinesAction@b5670a00)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.copyLineUp,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.MoveLinesAction@b5670a00)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.079
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.080
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.toggleOverwrite':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.toggleOverwrite,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.AbstractTextEditor$ToggleOverwriteModeAction@b0900c3d)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.toggleOverwrite,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.AbstractTextEditor$ToggleOverwriteModeAction@b0900c3d)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.080
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.080
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.goto.lineUp':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.goto.lineUp,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.TextNavigationAction@90f3201d)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.goto.lineUp,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.TextNavigationAction@90f3201d)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.081
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.081
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.smartEnter':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.smartEnter,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.InsertLineAction@6823d53c)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.smartEnter,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.InsertLineAction@6823d53c)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.082
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.082
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.cut.line':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.cut.line,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.DeleteLineAction@d0f3c932)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.cut.line,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.DeleteLineAction@d0f3c932)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.083
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.083
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.folding.toggle':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.folding.toggle,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.wst.sse.ui.FoldingActionGroup$2@481884ea)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.folding.toggle,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.wst.sse.ui.FoldingActionGroup$2@481884ea)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.084
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.084
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.swap.mark':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.swap.mark,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.MarkAction@ef70d941)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.swap.mark,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.MarkAction@ef70d941)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.084
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.084
+!MESSAGE Conflict for 'org.eclipse.ui.editors.quickdiff.revertLine':
+HandlerActivation(commandId=org.eclipse.ui.editors.quickdiff.revertLine,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@4acc2b79)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.editors.quickdiff.revertLine,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.internal.editors.quickdiff.RevertLineAction@4acc2b79)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.084
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.084
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.select.wordNext':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.select.wordNext,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.TextNavigationAction@7c88645e)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.select.wordNext,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.TextNavigationAction@7c88645e)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.085
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.085
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.goto.windowStart':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.goto.windowStart,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.TextNavigationAction@ebd2eda5)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.goto.windowStart,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.TextNavigationAction@ebd2eda5)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.085
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.085
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.select.wordPrevious':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.select.wordPrevious,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.TextNavigationAction@1c9ed5dd)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.select.wordPrevious,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.TextNavigationAction@1c9ed5dd)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.085
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.085
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.hippieCompletion':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.hippieCompletion,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.HippieCompleteAction@733d0e85)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.hippieCompletion,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.HippieCompleteAction@733d0e85)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.085
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.085
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.select.lineStart':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.select.lineStart,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.AbstractTextEditor$LineStartAction@8d53f883)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.select.lineStart,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.AbstractTextEditor$LineStartAction@8d53f883)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.086
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.086
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.moveLineUp':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.moveLineUp,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.MoveLinesAction@8d97a557)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.moveLineUp,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.MoveLinesAction@8d97a557)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.086
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.086
+!MESSAGE Conflict for 'org.eclipse.ui.file.properties':
+HandlerActivation(commandId=org.eclipse.ui.file.properties,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.dialogs.PropertyDialogAction@d623c975)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.file.properties,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.dialogs.PropertyDialogAction@d623c975)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.086
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.086
+!MESSAGE Conflict for 'org.eclipse.quickdiff.toggle':
+HandlerActivation(commandId=org.eclipse.quickdiff.toggle,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.AbstractDecoratedTextEditor$5@e75f45d0)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.quickdiff.toggle,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.AbstractDecoratedTextEditor$5@e75f45d0)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.086
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.086
+!MESSAGE Conflict for 'org.eclipse.ui.edit.findIncremental':
+HandlerActivation(commandId=org.eclipse.ui.edit.findIncremental,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.IncrementalFindAction@f3e1bc77)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.findIncremental,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.IncrementalFindAction@f3e1bc77)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.087
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.087
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.showRulerAnnotationInformation':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.showRulerAnnotationInformation,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.AbstractDecoratedTextEditor$11@ae2d0a3d)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.showRulerAnnotationInformation,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.AbstractDecoratedTextEditor$11@ae2d0a3d)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.087
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.087
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.contentAssist.proposals':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.contentAssist.proposals,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.TextOperationAction@18dc0d7f)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.contentAssist.proposals,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.TextOperationAction@18dc0d7f)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.087
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.087
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.goto.line':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.goto.line,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.GotoLineAction@45191a1f)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.goto.line,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.GotoLineAction@45191a1f)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.087
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.087
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.smartEnterInverse':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.smartEnterInverse,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.InsertLineAction@b0e23a15)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.smartEnterInverse,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.InsertLineAction@b0e23a15)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.088
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:06:11.088
+!MESSAGE Conflict for 'org.eclipse.ui.editors.revisions.rendering.cycle':
+HandlerActivation(commandId=org.eclipse.ui.editors.revisions.rendering.cycle,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.AbstractDecoratedTextEditor$7@13500c37)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.editors.revisions.rendering.cycle,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.AbstractDecoratedTextEditor$7@13500c37)),
+	expression=LegacyHandlerSubmission(Shell {Web -  - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.portlet.appedit.presentation.PortletApplicationEditor,pluginId=com.ibm.etools.portlet.portletappedit,registeredName=JSR 168 Portlet Deployment Descriptor Editor,hashCode=1471796013)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:07:18.783
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:07:18.783
+!MESSAGE Conflict for 'org.eclipse.wst.jsdt.ui.edit.text.java.open.editor':
+HandlerActivation(commandId=org.eclipse.wst.jsdt.ui.edit.text.java.open.editor,
+	handler=ActionHandler(org.eclipse.wst.jsdt.ui.actions.OpenAction@60c3618d),
+	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@9e0862bc,ActivePartExpression(com.ibm.etools.ui.navigator.SDNavigator@3b36115)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@b19a3e27)),sourcePriority=1064961)
+HandlerActivation(commandId=org.eclipse.wst.jsdt.ui.edit.text.java.open.editor,
+	handler=ActionHandler(org.eclipse.wst.jsdt.ui.actions.OpenAction@60c3618d),
+	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@9e0862bc,ActivePartExpression(com.ibm.etools.ui.navigator.SDNavigator@3b36115)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@b19a3e27)),sourcePriority=1064961)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:09:15.638
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:09:15.638
+!MESSAGE Conflict for 'com.ibm.etools.webedit.editor.actions.FormatB':
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.FormatB,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@e159afb9)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.FormatB,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@e159afb9)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:09:15.638
+!MESSAGE Conflict for 'com.ibm.etools.webedit.editor.actions.TableSelectRow':
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.TableSelectRow,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@259e6552)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.TableSelectRow,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@259e6552)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:09:15.638
+!MESSAGE Conflict for 'com.ibm.etools.webedit.editor.actions.RemoveTag':
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.RemoveTag,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@23ad526d)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.RemoveTag,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@23ad526d)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:09:15.638
+!MESSAGE Conflict for 'com.ibm.etools.webedit.editor.actions.Split':
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.Split,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.ModeChangeSplitAction@984a1075)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.Split,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.ModeChangeSplitAction@984a1075)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:09:15.638
+!MESSAGE Conflict for 'com.ibm.etools.webedit.editor.actions.InsertH3':
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.InsertH3,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@7d903d4a)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.InsertH3,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@7d903d4a)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:09:15.638
+!MESSAGE Conflict for 'com.ibm.etools.webedit.editor.actions.TableJoinCellWithAbove':
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.TableJoinCellWithAbove,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@eee973fa)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.TableJoinCellWithAbove,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@eee973fa)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:09:15.638
+!MESSAGE Conflict for 'com.ibm.etools.webedit.editor.actions.InsertP':
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.InsertP,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@d6bb2a1b)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.InsertP,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@d6bb2a1b)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:19:46.965
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:19:46.965
+!MESSAGE Conflict for 'org.eclipse.ui.edit.cut':
+HandlerActivation(commandId=org.eclipse.ui.edit.cut,
+	handler=ActionHandler(org.eclipse.jdt.internal.ui.refactoring.reorg.CutAction@2ccf0174),
+	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@9e0862bc,ActivePartExpression(com.ibm.etools.ui.navigator.SDNavigator@3b36115)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@b19a3e27)),sourcePriority=1064961)
+HandlerActivation(commandId=org.eclipse.ui.edit.cut,
+	handler=ActionHandler(org.eclipse.jdt.internal.ui.refactoring.reorg.CutAction@2ccf0174),
+	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@9e0862bc,ActivePartExpression(com.ibm.etools.ui.navigator.SDNavigator@3b36115)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@b19a3e27)),sourcePriority=1064961)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:19:47.056
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:19:47.056
+!MESSAGE Conflict for 'com.ibm.etools.webedit.editor.actions.TableSplitCellIntoColumns':
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.TableSplitCellIntoColumns,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@bdd7864b)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/edit.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=1984512637)),sourcePriority=67113984)
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.TableSplitCellIntoColumns,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@bdd7864b)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/edit.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=1984512637)),sourcePriority=67113984)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:19:47.056
+!MESSAGE Conflict for 'com.ibm.etools.webedit.editor.actions.TableJoinSelectedCells':
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.TableJoinSelectedCells,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@7da25406)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/edit.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=1984512637)),sourcePriority=67113984)
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.TableJoinSelectedCells,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@7da25406)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/edit.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=1984512637)),sourcePriority=67113984)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:19:47.056
+!MESSAGE Conflict for 'com.ibm.etools.webedit.editor.actions.SplitHorizontally':
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.SplitHorizontally,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.ModeChangeOrientationAction@66cc1924)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/edit.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=1984512637)),sourcePriority=67113984)
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.SplitHorizontally,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.ModeChangeOrientationAction@66cc1924)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/edit.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=1984512637)),sourcePriority=67113984)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:19:47.056
+!MESSAGE Conflict for 'com.ibm.etools.webedit.editor.actions.InsertH5':
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.InsertH5,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@b65604f)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/edit.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=1984512637)),sourcePriority=67113984)
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.InsertH5,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@b65604f)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/edit.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=1984512637)),sourcePriority=67113984)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:19:47.056
+!MESSAGE Conflict for 'com.ibm.etools.webedit.editor.actions.Design':
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.Design,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.ModeChangeAction@f9db1c07)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/edit.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=1984512637)),sourcePriority=67113984)
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.Design,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.ModeChangeAction@f9db1c07)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/edit.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=1984512637)),sourcePriority=67113984)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:19:47.056
+!MESSAGE Conflict for 'com.ibm.etools.webedit.editor.actions.TableJoinCellWithBelow':
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.TableJoinCellWithBelow,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@26e47ab1)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/edit.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=1984512637)),sourcePriority=67113984)
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.TableJoinCellWithBelow,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@26e47ab1)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/edit.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=1984512637)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-08 15:28:59.576
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:28:59.576
+!MESSAGE Conflict for 'com.ibm.etools.webedit.editor.actions.FormatI':
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.FormatI,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@7991c199)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.FormatI,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@7991c199)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:28:59.576
+!MESSAGE Conflict for 'com.ibm.etools.webedit.editor.actions.Source':
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.Source,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.ModeChangeAction@5b3978c3)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.Source,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.ModeChangeAction@5b3978c3)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:28:59.576
+!MESSAGE Conflict for 'com.ibm.etools.webedit.editor.actions.TraversePaneBackward':
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.TraversePaneBackward,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.ModeChangeTraverseAction@b3efcaea)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.TraversePaneBackward,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.ModeChangeTraverseAction@b3efcaea)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-08 15:28:59.576
+!MESSAGE Conflict for 'com.ibm.etools.webedit.editor.actions.Nop':
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.Nop,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.PageDesignerContributor$2@69b3544)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)
+HandlerActivation(commandId=com.ibm.etools.webedit.editor.actions.Nop,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.PageDesignerContributor$2@69b3544)),
+	expression=LegacyHandlerSubmission(Shell {Web - PDFBrowser/WebContent/WEB-INF/jsp/view.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1872638648)),sourcePriority=67113984)

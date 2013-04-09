@@ -1,38 +1,20 @@
 
 ==================================================================
 
-XML Access Delegate invoked at Mon Apr 08 14:55:32 CDT 2013
+XML Access Delegate invoked at Mon Apr 08 15:13:09 CDT 2013
 ID: com.ibm.etools.portal.ui.v8.removePreviousPortlets.portlet
 
-XML Access Request sent at Mon Apr 08 14:55:32 CDT 2013
-<?xml version="1.0" encoding="UTF-8"?>
-<request create-oids="true" type="update" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PortalConfig_8.0.0.xsd">
-  <portal action="locate">
-    <web-app action="delete" uid="com.asponte.vmmportlet.VMMPortlet.1d3a5058a3.webmod"/>
-    <content-node action="delete" uniquename="ibm.portal.rational.portlets.com.asponte.vmmportlet.VMMPortlet.1d3a5058a3.webmod"/>
-  </portal>
-</request>
-
-XML Access Response received at Mon Apr 08 14:55:38 CDT 2013
-<?xml version="1.0" encoding="UTF-8"?>
-<request build="wp800CF02_001_30" type="update" version="8.0.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PortalConfig_8.0.0.xsd">
-      <status element="[content-node uniquename=ibm.portal.rational.portlets.com.asponte.vmmportlet.VMMPortlet.1d3a5058a3.webmod]" result="warning">
-            <message id="EJPXA0053W">EJPXA0053W: The resource could not be found for deletion, possibly because it was already deleted.</message>
-
-    </status>
-
-      <status element="all" result="ok"/>
-
-</request>
+XML Access Request sent at Mon Apr 08 15:13:09 CDT 2013
+XML Access Delegate returned a null document
 
 
 ==================================================================
 
-XML Access Delegate invoked at Mon Apr 08 14:56:03 CDT 2013
+XML Access Delegate invoked at Mon Apr 08 15:13:28 CDT 2013
 ID: com.ibm.etools.portal.server.ui.v8.xmlaccess.installPredeployedPortlet.portlet
  Attribute: anonymousAccess = false
 
-XML Access Request sent at Mon Apr 08 14:56:03 CDT 2013
+XML Access Request sent at Mon Apr 08 15:13:28 CDT 2013
 <?xml version="1.0" encoding="UTF-8"?>
 <request create-oids="true" type="update" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PortalConfig_8.0.0.xsd">
   <portal action="locate">
@@ -52,7 +34,7 @@ XML Access Request sent at Mon Apr 08 14:56:03 CDT 2013
   </portal>
 </request>
 
-XML Access Response received at Mon Apr 08 14:56:04 CDT 2013
+XML Access Response received at Mon Apr 08 15:13:30 CDT 2013
 <?xml version="1.0" encoding="UTF-8"?>
 <request build="wp800CF02_001_30" type="update" version="8.0.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PortalConfig_8.0.0.xsd">
       <status element="all" result="ok"/>
@@ -62,13 +44,13 @@ XML Access Response received at Mon Apr 08 14:56:04 CDT 2013
 
 ==================================================================
 
-XML Access Delegate invoked at Mon Apr 08 14:56:04 CDT 2013
+XML Access Delegate invoked at Mon Apr 08 15:13:30 CDT 2013
 ID: com.ibm.etools.portal.server.ui.v8.xmlaccess.createPages.portlet
  Attribute: labelTitle = Rational Components
  Attribute: labelOrdinal = first
  Attribute: multiplePages = true
 
-XML Access Request sent at Mon Apr 08 14:56:04 CDT 2013
+XML Access Request sent at Mon Apr 08 15:13:30 CDT 2013
 <?xml version="1.0" encoding="UTF-8"?>
 <request create-oids="true" type="update" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PortalConfig_8.0.0.xsd">
   <portal action="locate">
@@ -340,7 +322,7 @@ XML Access Request sent at Mon Apr 08 14:56:04 CDT 2013
   </portal>
 </request>
 
-XML Access Response received at Mon Apr 08 14:56:23 CDT 2013
+XML Access Response received at Mon Apr 08 15:13:38 CDT 2013
 <?xml version="1.0" encoding="UTF-8"?>
 <request build="wp800CF02_001_30" type="update" version="8.0.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PortalConfig_8.0.0.xsd">
       <status element="all" result="ok"/>

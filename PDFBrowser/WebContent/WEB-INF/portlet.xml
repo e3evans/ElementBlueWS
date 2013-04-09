@@ -7,8 +7,7 @@
 		<supports>
 			<mime-type>text/html</mime-type>
 			<portlet-mode>VIEW</portlet-mode>
-			<portlet-mode>EDIT</portlet-mode>
-			<portlet-mode>HELP</portlet-mode>
+			<portlet-mode>edit_defaults</portlet-mode>
 		</supports>
 		<supported-locale>en</supported-locale>
 		<resource-bundle>com.usda.nl.PDFBrowserResource</resource-bundle>
@@ -19,8 +18,12 @@
 		</portlet-info>
 		<portlet-preferences>
 			<preference>
-				<name>com.aurora.polls.lastpolltake</name>
-				<value>EMPTY</value>
+				<name>com.usda.pref.webserver</name>
+				<value>http://test.here.com</value>
+			</preference>
+			<preference>
+				<name>com.usda.pref.directory</name>
+				<value>/brs/whatever</value>
 			</preference>
 		</portlet-preferences>
 	</portlet>
