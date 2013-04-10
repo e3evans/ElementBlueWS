@@ -1,3 +1,5 @@
 INDEX VERSION 1.126
 C:\GitProjects\ElementBlueWS\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1611929458.index
 \PDFBrowser\src
+C:\GitProjects\ElementBlueWS\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3103977856.index
+\FileManager\src
