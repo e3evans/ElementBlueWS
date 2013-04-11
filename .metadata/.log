@@ -2800,3 +2800,45 @@ HandlerActivation(commandId=org.eclipse.ui.edit.delete,
 HandlerActivation(commandId=org.eclipse.ui.edit.delete,
 	handler=ActionHandler(org.eclipse.wst.server.ui.internal.view.servers.GlobalDeleteAction@2aafc85f),
 	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@ebfacc1,ActivePartExpression(org.eclipse.wst.server.ui.internal.cnf.ServersView2@8cb7674e)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@93f4dcf3)),sourcePriority=1064961)
+!SESSION 2013-04-11 11:06:16.837 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.7.0 IBM J9 2.6 Windows 7 amd64-64 Compressed References 20120809_118929 (JIT enabled, AOT enabled)
+J9VM - R26_Java726_SR2_20120809_0948_B118929
+JIT  - r11.b01_20120808_24925
+GC   - R26_Java726_SR2_20120809_0948_B118929_CMPRSS
+J9CL - 20120809_118929
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.ibm.rational.rad.product.v85.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.rad.product.v85.ide
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-11 11:06:21.645
+!MESSAGE Project facet osgi.subsystem has not been defined. It is used in plugin com.ibm.ws.st.osgi.core.
+
+!ENTRY org.eclipse.jface 2 0 2013-04-11 11:06:24.458
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-04-11 11:06:24.458
+!MESSAGE A conflict occurred for CTRL+SHIFT+P:
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(com.ibm.etools.webedit.editor.actions.NextPane,Switch to Next Pane,
+		Switch to Next Pane,
+		Category(com.ibm.etools.webedit.editor.category,Page Designer,%category.PageDesigner.description,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.ModeChangeNextPaneAction@c46dfdc0)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.ibm.etools.webedit.editor.pageDesignerScope,,,system)
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.m2e.core.ui.command.addPlugin,Add Maven Plugin,
+		Add Maven Plugin,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.core.runtime.xml,,,system)
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.goto.matching.bracket,Matching Bracket,
+		Go to Matching Bracket,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.wst.sse.ui.StructuredTextEditor$GotoMatchingBracketHandler@aa55fc,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
