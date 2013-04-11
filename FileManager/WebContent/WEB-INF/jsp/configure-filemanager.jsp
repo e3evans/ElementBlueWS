@@ -8,6 +8,16 @@
    <h3>Enter the starting path of the directory</h3>
    <input type="hidden" name="javax.portlet.action" value="saveConfiguration" />
 
+	<label for="folderUrl">Folder Path:</label>
+	<input type="text" id="Folder Path" name="folderUrl" value="<c:out value='${folderUrl}'/>" />
+	<div>
+		<p><b>Local Folder Example:</b><br/>
+		/myfolder/<br>
+		d:/myfolder/docs/</p>
+		<p><b>This value will prefix all Root Path values</b><br/></p>	
+	</div>
+
+
 	<label for="rootUrl">Root Path:</label>
 	<input type="text" id="rootUrl" name="rootUrl" value="<c:out value='${rootUrl}'/>" />
 	
@@ -15,11 +25,11 @@
 
 	<div>
 		<p><b>Local directory Example:</b><br/>
-		/myfolder/docs<br>
+		myfolder/docs<br>
 		d:/myfolder/docs</p>
 		
 		<p><b>UNC path directory Example:</b><br/>
-		////myfolder/docs</p>
+		myfolder/docs</p>
 	</div>
 	
 	<br><br>

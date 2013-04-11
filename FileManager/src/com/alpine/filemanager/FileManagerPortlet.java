@@ -22,7 +22,8 @@ public class FileManagerPortlet extends GenericPortlet {
 	
 	private static final String PREF_ROOT_URL = "rootUrl";
 	private static final String PREF_MAX_HEIGHT = "maxHeight";
-	private static final PortletMode CUSTOM_EDIT_DEFAULTS_MODE = new PortletMode("edit_defaults");
+	private static final String PREF_FOLDER_URL = "folderUrl";
+	//private static final PortletMode CUSTOM_EDIT_DEFAULTS_MODE = new PortletMode("edit_defaults");
 	
 	@RenderMode(name="edit_defaults")
     public void configureFileManager(RenderRequest request, RenderResponse response) throws PortletException, IOException {
@@ -30,6 +31,7 @@ public class FileManagerPortlet extends GenericPortlet {
 
 		request.setAttribute("rootUrl", request.getPreferences().getValue(PREF_ROOT_URL, ""));
 		request.setAttribute("maxHeight", request.getPreferences().getValue(PREF_MAX_HEIGHT, ""));
+		request.setAttribute("folderUrl",request.getPreferences().getValue(PREF_FOLDER_URL, ""));
 		
 		getPortletContext().getRequestDispatcher("/WEB-INF/jsp/configure-filemanager.jsp").include(request,response);
 	}
@@ -41,11 +43,22 @@ public class FileManagerPortlet extends GenericPortlet {
 		 * Check for a folder path in the URL
 		 */
 		HttpServletRequest hsreq = com.ibm.ws.portletcontainer.portlet.PortletUtils.getHttpServletRequest(request);
-		if (hsreq.getParameter(PREF_ROOT_URL)!=null){
-			request.getPortletSession().setAttribute(PREF_ROOT_URL, hsreq.getParameter(PREF_ROOT_URL));
+		String qParm = hsreq.getParameter(PREF_ROOT_URL);
+		String sParm = null;
+		String finalPath="";
+		if (request.getPortletSession().getAttribute(PREF_ROOT_URL)!=null) sParm = (String) request.getPortletSession().getAttribute(PREF_ROOT_URL);
+		if (!request.getPreferences().getValue(PREF_FOLDER_URL, "").equals("")){
+			if (qParm!=null){
+				finalPath = request.getPreferences().getValue(PREF_FOLDER_URL, "")+qParm;
+				request.getPortletSession().setAttribute(PREF_ROOT_URL, qParm);
+			}else if (sParm!=null){
+				finalPath=request.getPreferences().getValue(PREF_FOLDER_URL, "")+sParm;
+			}else{
+				finalPath = request.getPreferences().getValue(PREF_FOLDER_URL, "")+request.getPreferences().getValue(PREF_ROOT_URL, "");
+			}
 		}
-		request.setAttribute("rootUrl", request.getPreferences().getValue(PREF_ROOT_URL, ""));
-		System.out.println("ROOT URL:"+hsreq.getParameter(PREF_ROOT_URL));
+		
+		request.setAttribute("rootUrl", finalPath);
 		String inlineStyle = "";
 		if(request.getPreferences().getValue(PREF_MAX_HEIGHT, "")!=null && !request.getPreferences().getValue(PREF_MAX_HEIGHT, "").equals("")) {
 			inlineStyle = "style=max-height:" + request.getPreferences().getValue(PREF_MAX_HEIGHT, "") + "px;";
@@ -65,6 +78,7 @@ public class FileManagerPortlet extends GenericPortlet {
 			PortletPreferences prefs = request.getPreferences();
 			prefs.setValue(PREF_ROOT_URL, request.getParameter("rootUrl"));
 			prefs.setValue(PREF_MAX_HEIGHT, request.getParameter("maxHeight"));
+			prefs.setValue(PREF_FOLDER_URL, request.getParameter("folderUrl"));
 			prefs.store();
 			
 			response.setPortletMode(PortletMode.VIEW);

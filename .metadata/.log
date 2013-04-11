@@ -2627,3 +2627,176 @@ Binding(CTRL+SHIFT+P,
 
 !ENTRY org.eclipse.osgi 2 1 2013-04-10 16:36:41.578
 !MESSAGE NLS unused message: PortletIncrementalPublishingSection_0 in: com.ibm.etools.portal.server.ui.v8.internal.ui.editor.messages
+!SESSION 2013-04-11 09:20:12.462 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.7.0 IBM J9 2.6 Windows 7 amd64-64 Compressed References 20120809_118929 (JIT enabled, AOT enabled)
+J9VM - R26_Java726_SR2_20120809_0948_B118929
+JIT  - r11.b01_20120808_24925
+GC   - R26_Java726_SR2_20120809_0948_B118929_CMPRSS
+J9CL - 20120809_118929
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.ibm.rational.rad.product.v85.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.rad.product.v85.ide
+
+!ENTRY org.eclipse.osgi 2 1 2013-04-11 09:20:17.705
+!MESSAGE NLS unused message: PortletIncrementalPublishingSection_0 in: com.ibm.etools.portal.server.ui.v8.internal.ui.editor.messages
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-11 09:20:19.119
+!MESSAGE Project facet osgi.subsystem has not been defined. It is used in plugin com.ibm.ws.st.osgi.core.
+
+!ENTRY org.eclipse.jface 2 0 2013-04-11 09:28:17.600
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-04-11 09:28:17.600
+!MESSAGE A conflict occurred for CTRL+SHIFT+P:
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(com.ibm.etools.webedit.editor.actions.NextPane,Switch to Next Pane,
+		Switch to Next Pane,
+		Category(com.ibm.etools.webedit.editor.category,Page Designer,%category.PageDesigner.description,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.ModeChangeNextPaneAction@7842643a)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.ibm.etools.webedit.editor.pageDesignerScope,,,system)
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.m2e.core.ui.command.addPlugin,Add Maven Plugin,
+		Add Maven Plugin,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.core.runtime.xml,,,system)
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.goto.matching.bracket,Matching Bracket,
+		Go to Matching Bracket,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.wst.sse.ui.StructuredTextEditor$GotoMatchingBracketHandler@e6ed4849,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-11 09:28:30.668
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-11 09:28:30.668
+!MESSAGE Conflict for 'org.eclipse.ui.edit.cut':
+HandlerActivation(commandId=org.eclipse.ui.edit.cut,
+	handler=ActionHandler(org.eclipse.jdt.internal.ui.refactoring.reorg.CutAction@bbdd378c),
+	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@ebfacc1,ActivePartExpression(com.ibm.etools.ui.navigator.SDNavigator@2c2c8b35)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@93f4dcf3)),sourcePriority=1064961)
+HandlerActivation(commandId=org.eclipse.ui.edit.cut,
+	handler=ActionHandler(org.eclipse.jdt.internal.ui.refactoring.reorg.CutAction@bbdd378c),
+	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@ebfacc1,ActivePartExpression(com.ibm.etools.ui.navigator.SDNavigator@2c2c8b35)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@93f4dcf3)),sourcePriority=1064961)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-11 10:22:05.537
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-11 10:22:05.537
+!MESSAGE Conflict for 'org.eclipse.ui.file.revert':
+HandlerActivation(commandId=org.eclipse.ui.file.revert,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.internal.actions.override.HookAction@34860a5f)),
+	expression=LegacyHandlerSubmission(Shell {Web - FileManager/WebContent/WEB-INF/jsp/configure-filemanager.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1540750601)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.file.revert,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.RevertToSavedAction@d1b51596)),
+	expression=LegacyHandlerSubmission(Shell {Web - FileManager/WebContent/WEB-INF/jsp/configure-filemanager.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1540750601)),sourcePriority=67113984)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-11 10:22:05.537
+!MESSAGE Conflict for 'org.eclipse.ui.edit.findReplace':
+HandlerActivation(commandId=org.eclipse.ui.edit.findReplace,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.internal.actions.override.HookAction@b23fd37c)),
+	expression=LegacyHandlerSubmission(Shell {Web - FileManager/WebContent/WEB-INF/jsp/configure-filemanager.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1540750601)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.findReplace,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.FindReplaceAction@3f9dfa2f)),
+	expression=LegacyHandlerSubmission(Shell {Web - FileManager/WebContent/WEB-INF/jsp/configure-filemanager.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1540750601)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-11 10:36:35.321
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-11 10:36:35.321
+!MESSAGE Conflict for 'org.eclipse.ui.file.print':
+HandlerActivation(commandId=org.eclipse.ui.file.print,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.internal.actions.override.HookAction@578195a5)),
+	expression=LegacyHandlerSubmission(Shell {Web - FileManager/WebContent/WEB-INF/jsp/view-filemanager.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1626393975)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.file.print,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.internal.actions.override.HookAction@83186714)),
+	expression=LegacyHandlerSubmission(Shell {Web - FileManager/WebContent/WEB-INF/jsp/view-filemanager.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1626393975)),sourcePriority=67113984)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-11 10:36:35.321
+!MESSAGE Conflict for 'org.eclipse.ui.edit.selectAll':
+HandlerActivation(commandId=org.eclipse.ui.edit.selectAll,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.internal.actions.override.HookAction@70eff2bd)),
+	expression=LegacyHandlerSubmission(Shell {Web - FileManager/WebContent/WEB-INF/jsp/view-filemanager.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1626393975)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.selectAll,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.internal.actions.override.HookAction@fb1e7e67)),
+	expression=LegacyHandlerSubmission(Shell {Web - FileManager/WebContent/WEB-INF/jsp/view-filemanager.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1626393975)),sourcePriority=67113984)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-11 10:36:35.321
+!MESSAGE Conflict for 'org.eclipse.ui.edit.addBookmark':
+HandlerActivation(commandId=org.eclipse.ui.edit.addBookmark,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.internal.actions.override.HookAction@40d531d1)),
+	expression=LegacyHandlerSubmission(Shell {Web - FileManager/WebContent/WEB-INF/jsp/view-filemanager.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1626393975)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.addBookmark,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.internal.actions.override.HookAction@632140d2)),
+	expression=LegacyHandlerSubmission(Shell {Web - FileManager/WebContent/WEB-INF/jsp/view-filemanager.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1626393975)),sourcePriority=67113984)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-11 10:36:35.321
+!MESSAGE Conflict for 'org.eclipse.ui.edit.copy':
+HandlerActivation(commandId=org.eclipse.ui.edit.copy,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.internal.actions.override.HookAction@690ca2b2)),
+	expression=LegacyHandlerSubmission(Shell {Web - FileManager/WebContent/WEB-INF/jsp/view-filemanager.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1626393975)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.copy,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.internal.actions.override.HookAction@2e4388ef)),
+	expression=LegacyHandlerSubmission(Shell {Web - FileManager/WebContent/WEB-INF/jsp/view-filemanager.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1626393975)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-11 10:36:45.806
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-11 10:36:45.806
+!MESSAGE Conflict for 'org.eclipse.ui.navigate.previous':
+HandlerActivation(commandId=org.eclipse.ui.navigate.previous,
+	handler=ActionHandler(org.eclipse.ui.texteditor.GotoAnnotationAction@9206aaea),
+	expression=AndExpression(LegacyEditorActionBarExpression(org.eclipse.jdt.ui.CompilationUnitEditor),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@93f4dcf3)),sourcePriority=4210689)
+HandlerActivation(commandId=org.eclipse.ui.navigate.previous,
+	handler=ActionHandler(org.eclipse.ui.texteditor.GotoAnnotationAction@6e25d769),
+	expression=AndExpression(LegacyEditorActionBarExpression(org.eclipse.jdt.ui.CompilationUnitEditor),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@93f4dcf3)),sourcePriority=4210689)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-11 10:51:01.704
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-11 10:51:01.704
+!MESSAGE Conflict for 'org.eclipse.jdt.ui.edit.text.java.search.write.access.in.working.set':
+HandlerActivation(commandId=org.eclipse.jdt.ui.edit.text.java.search.write.access.in.working.set,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.jdt.ui.actions.FindWriteReferencesInWorkingSetAction@b70c795b)),
+	expression=LegacyHandlerSubmission(Shell {Web - FileManager/src/com/ibm/filemanager/FileManagerPortlet.java - Rational® Application Developer for WebSphere® Software},null,PartSite(id=org.eclipse.jdt.ui.CompilationUnitEditor,pluginId=org.eclipse.jdt.ui,registeredName=Java Editor,hashCode=13011840)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.jdt.ui.edit.text.java.search.write.access.in.working.set,
+	handler=LegacyHandlerWrapper(ActionHandler(action=org.eclipse.jdt.ui.actions.FindReadReferencesInWorkingSetAction@5dc51ce7)),
+	expression=LegacyHandlerSubmission(Shell {Web - FileManager/src/com/ibm/filemanager/FileManagerPortlet.java - Rational® Application Developer for WebSphere® Software},null,PartSite(id=org.eclipse.jdt.ui.CompilationUnitEditor,pluginId=org.eclipse.jdt.ui,registeredName=Java Editor,hashCode=13011840)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-11 10:51:11.351
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-11 10:51:11.351
+!MESSAGE Conflict for 'org.eclipse.ui.edit.paste':
+HandlerActivation(commandId=org.eclipse.ui.edit.paste,
+	handler=ActionHandler(org.eclipse.jdt.internal.ui.refactoring.reorg.PasteAction@7d3d0a19),
+	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@ebfacc1,ActivePartExpression(com.ibm.etools.ui.navigator.SDNavigator@2c2c8b35)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@93f4dcf3)),sourcePriority=1064961)
+HandlerActivation(commandId=org.eclipse.ui.edit.paste,
+	handler=ActionHandler(org.eclipse.jdt.internal.ui.refactoring.reorg.PasteAction@7d3d0a19),
+	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@ebfacc1,ActivePartExpression(com.ibm.etools.ui.navigator.SDNavigator@2c2c8b35)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@93f4dcf3)),sourcePriority=1064961)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-11 10:56:24.495
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-11 10:56:24.495
+!MESSAGE Conflict for 'org.eclipse.ui.edit.undo':
+HandlerActivation(commandId=org.eclipse.ui.edit.undo,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.internal.actions.override.HookAction@8d0981d9)),
+	expression=LegacyHandlerSubmission(Shell {Web - FileManager/WebContent/WEB-INF/jsp/configure-filemanager.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1540750601)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.undo,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.internal.actions.override.HookAction@3cec37a9)),
+	expression=LegacyHandlerSubmission(Shell {Web - FileManager/WebContent/WEB-INF/jsp/configure-filemanager.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1540750601)),sourcePriority=67113984)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-11 10:56:24.495
+!MESSAGE Conflict for 'org.eclipse.ui.edit.redo':
+HandlerActivation(commandId=org.eclipse.ui.edit.redo,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.internal.actions.override.HookAction@75d63b61)),
+	expression=LegacyHandlerSubmission(Shell {Web - FileManager/WebContent/WEB-INF/jsp/configure-filemanager.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1540750601)),sourcePriority=67113984)
+HandlerActivation(commandId=org.eclipse.ui.edit.redo,
+	handler=LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.internal.actions.override.HookAction@66744fbb)),
+	expression=LegacyHandlerSubmission(Shell {Web - FileManager/WebContent/WEB-INF/jsp/configure-filemanager.jsp - Rational® Application Developer for WebSphere® Software},null,PartSite(id=com.ibm.etools.webedit.editor.HTMLEditor,pluginId=com.ibm.etools.webedit.editor,registeredName=Page Designer,hashCode=-1540750601)),sourcePriority=67113984)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-11 10:59:34.511
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-11 10:59:34.511
+!MESSAGE Conflict for 'org.eclipse.ui.edit.delete':
+HandlerActivation(commandId=org.eclipse.ui.edit.delete,
+	handler=ActionHandler(org.eclipse.wst.server.ui.internal.view.servers.GlobalDeleteAction@2aafc85f),
+	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@ebfacc1,ActivePartExpression(org.eclipse.wst.server.ui.internal.cnf.ServersView2@8cb7674e)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@93f4dcf3)),sourcePriority=1064961)
+HandlerActivation(commandId=org.eclipse.ui.edit.delete,
+	handler=ActionHandler(org.eclipse.wst.server.ui.internal.view.servers.GlobalDeleteAction@2aafc85f),
+	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@ebfacc1,ActivePartExpression(org.eclipse.wst.server.ui.internal.cnf.ServersView2@8cb7674e)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@93f4dcf3)),sourcePriority=1064961)

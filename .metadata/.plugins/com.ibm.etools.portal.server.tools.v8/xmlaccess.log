@@ -1,32 +1,328 @@
-XML Access Request sent at Wed Apr 10 16:20:37 CDT 2013
+
+==================================================================
+
+XML Access Delegate invoked at Thu Apr 11 09:27:37 CDT 2013
+ID: com.ibm.etools.portal.ui.v8.removePreviousPortlets.portlet
+
+XML Access Request sent at Thu Apr 11 09:27:37 CDT 2013
+XML Access Delegate returned a null document
+
+
+==================================================================
+
+XML Access Delegate invoked at Thu Apr 11 09:27:37 CDT 2013
+ID: com.ibm.etools.portal.server.ui.v8.xmlaccess.installPredeployedPortlet.portlet
+ Attribute: anonymousAccess = false
+
+XML Access Request sent at Thu Apr 11 09:27:37 CDT 2013
 <?xml version="1.0" encoding="UTF-8"?>
-<request create-oids="true" type="update" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PortalConfig_7.0.0.xsd">
+<request create-oids="true" type="update" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PortalConfig_8.0.0.xsd">
   <portal action="locate">
-    <web-app action="delete" uid="com.alpine.filemanager.FileManagerPortlet.60bd23ef23.webmod"/>
+    <web-app action="update" active="true" predeployed="true" removable="true" uid="com.aurora.org.AuroraPollPortlet.2757b6ffa3.webmod">
+      <url>file://localhost/C:/GitProjects/ElementBlueWS/PDFBrowser/WebContent</url>
+      <context-root>/.PDFBrowser</context-root>
+      <display-name>.PDFBrowser</display-name>
+      <portlet-app action="update" active="true" name="PDFBrowser.war" uid="com.aurora.org.AuroraPollPortlet.2757b6ffa3">
+        <access-control>
+          <role actionset="Privileged User" update="set">
+            <mapping subjectid="all authenticated portal users" subjecttype="user_group" update="set"/>
+          </role>
+        </access-control>
+        <portlet action="update" active="true" name="PDFBrowser" provided="false"/>
+      </portlet-app>
+    </web-app>
   </portal>
 </request>
 
-XML Access Response received at Wed Apr 10 16:20:37 CDT 2013
+XML Access Response received at Thu Apr 11 09:27:39 CDT 2013
 <?xml version="1.0" encoding="UTF-8"?>
 <request build="wp800CF02_001_30" type="update" version="8.0.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PortalConfig_8.0.0.xsd">
-      <status element="[web-app uid=com.alpine.filemanager.FileManagerPortlet.60bd23ef23.webmod]" result="warning">
-            <message id="EJPXA0053W">EJPXA0053W: The resource could not be found for deletion, possibly because it was already deleted.</message>
-
-    </status>
-
       <status element="all" result="ok"/>
 
 </request>
 
-XML Access Request sent at Wed Apr 10 16:20:37 CDT 2013
+
+==================================================================
+
+XML Access Delegate invoked at Thu Apr 11 09:27:39 CDT 2013
+ID: com.ibm.etools.portal.server.ui.v8.xmlaccess.createPages.portlet
+ Attribute: labelTitle = Rational Components
+ Attribute: labelOrdinal = first
+ Attribute: multiplePages = true
+
+XML Access Request sent at Thu Apr 11 09:27:39 CDT 2013
 <?xml version="1.0" encoding="UTF-8"?>
 <request create-oids="true" type="update" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PortalConfig_8.0.0.xsd">
   <portal action="locate">
-    <content-node action="delete" uniquename="ibm.portal.rational.portlets.FileManager.ffe963f7292b92530d4b86944c160454"/>
+    <markup action="update" active="true" default-charset="UTF-8" mimetype="text/html" name="chtml">
+      <localedata charset="UTF-8" locale="sv">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="nl">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="en">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="cs">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="el">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="ar">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="hu">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="hr">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="zh">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="fr">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="ja">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="tr">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="pt_BR">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="zh_TW">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="fi">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="ru">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="iw">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="ko">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="it">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="pt">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="de">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="da">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="pl">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="es">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="no">
+        <title>chtml</title>
+      </localedata>
+    </markup>
+    <web-app action="locate" uid="com.aurora.org.AuroraPollPortlet.2757b6ffa3.webmod">
+      <portlet-app action="locate" name="com.aurora.org.AuroraPollPortlet.2757b6ffa3">
+        <portlet action="locate" name="PDFBrowser" objectid="rationalportletPDFBrowser"/>
+      </portlet-app>
+    </web-app>
+    <content-node action="update" objectid="MyPortalParentPage" uniquename="ibm.portal.Home">
+      <supported-markup markup="html" update="set"/>
+      <supported-markup markup="chtml" update="set"/>
+    </content-node>
+    <content-node action="update" active="true" content-parentref="MyPortalParentPage" create-type="explicit" objectid="RationalPortletsParentPage" ordinal="first" type="label" uniquename="ibm.portal.rational.portlets">
+      <supported-markup markup="html" update="set"/>
+      <supported-markup markup="chtml" update="set"/>
+      <localedata locale="sv">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="nl">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="en">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="cs">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="el">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="ar">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="hu">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="hr">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="zh">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="fr">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="ja">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="tr">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="pt_BR">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="zh_TW">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="fi">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="ru">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="iw">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="ko">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="it">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="pt">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="de">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="da">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="pl">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="es">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="no">
+        <title>Rational Components</title>
+      </localedata>
+      <access-control>
+        <role actionset="Privileged User" update="set">
+          <mapping subjectid="all authenticated portal users" subjecttype="user_group" update="set"/>
+        </role>
+      </access-control>
+    </content-node>
+    <content-node action="update" active="true" content-parentref="RationalPortletsParentPage" create-type="explicit" ordinal="first" preserve-old-layout="true" type="staticpage" uniquename="ibm.portal.rational.portlets.PDFBrowser.4030e2ee063966ec52971266b9470f4d">
+      <supported-markup markup="html" update="set"/>
+      <localedata locale="sv">
+        <title>PDFBrowser</title>
+      </localedata>
+      <localedata locale="nl">
+        <title>PDFBrowser</title>
+      </localedata>
+      <localedata locale="en">
+        <title>PDFBrowser</title>
+      </localedata>
+      <localedata locale="cs">
+        <title>PDFBrowser</title>
+      </localedata>
+      <localedata locale="el">
+        <title>PDFBrowser</title>
+      </localedata>
+      <localedata locale="ar">
+        <title>PDFBrowser</title>
+      </localedata>
+      <localedata locale="hu">
+        <title>PDFBrowser</title>
+      </localedata>
+      <localedata locale="hr">
+        <title>PDFBrowser</title>
+      </localedata>
+      <localedata locale="zh">
+        <title>PDFBrowser</title>
+      </localedata>
+      <localedata locale="fr">
+        <title>PDFBrowser</title>
+      </localedata>
+      <localedata locale="ja">
+        <title>PDFBrowser</title>
+      </localedata>
+      <localedata locale="tr">
+        <title>PDFBrowser</title>
+      </localedata>
+      <localedata locale="pt_BR">
+        <title>PDFBrowser</title>
+      </localedata>
+      <localedata locale="zh_TW">
+        <title>PDFBrowser</title>
+      </localedata>
+      <localedata locale="fi">
+        <title>PDFBrowser</title>
+      </localedata>
+      <localedata locale="ru">
+        <title>PDFBrowser</title>
+      </localedata>
+      <localedata locale="iw">
+        <title>PDFBrowser</title>
+      </localedata>
+      <localedata locale="ko">
+        <title>PDFBrowser</title>
+      </localedata>
+      <localedata locale="it">
+        <title>PDFBrowser</title>
+      </localedata>
+      <localedata locale="pt">
+        <title>PDFBrowser</title>
+      </localedata>
+      <localedata locale="de">
+        <title>PDFBrowser</title>
+      </localedata>
+      <localedata locale="da">
+        <title>PDFBrowser</title>
+      </localedata>
+      <localedata locale="pl">
+        <title>PDFBrowser</title>
+      </localedata>
+      <localedata locale="es">
+        <title>PDFBrowser</title>
+      </localedata>
+      <localedata locale="no">
+        <title>PDFBrowser</title>
+      </localedata>
+      <parameter name="resourceaggregation.profile" type="string" update="set">profiles/profile_full.json</parameter>
+      <parameter name="com.ibm.portal.static.page.file.name.html" type="string" update="set">&lt;![CDATA[ layout.html ]]&gt; </parameter>
+      <parameter name="com.ibm.portal.layout.template.ref" type="string" update="set">&lt;![CDATA[ dav:fs-type1/themes/Portal8.0/layout-templates/1Column/ ]]&gt; </parameter>
+      <parameter name="com.ibm.portal.rendertype" type="string" update="set">SSA</parameter>
+      <access-control>
+        <role actionset="Privileged User" update="set">
+          <mapping subjectid="all authenticated portal users" subjecttype="user_group" update="set"/>
+        </role>
+      </access-control>
+      <component action="update" ordinal="-1" orientation="H" type="container" uniquename="rational.portlets.PDFBrowser.pageContainer">
+        <component action="update" ordinal="-1" orientation="V" type="container" uniquename="rational.portlets.PDFBrowser.projectVContainer.PDFBrowser">
+          <parameter name="com.ibm.portal.layoutnode.localname" type="string" update="set">&lt;![CDATA[ ibmMainContainer ]]&gt; </parameter>
+          <component action="update" ordinal="100" type="control" uniquename="rational.portlets.PDFBrowser.portletControl.PDFBrowser.PDFBrowser">
+            <portletinstance action="update" portletref="rationalportletPDFBrowser" uniquename="rational.portlets.PDFBrowser.portletInstance.PDFBrowser.PDFBrowser"/>
+          </component>
+        </component>
+      </component>
+    </content-node>
   </portal>
 </request>
 
-XML Access Response received at Wed Apr 10 16:20:38 CDT 2013
+XML Access Response received at Thu Apr 11 09:27:48 CDT 2013
 <?xml version="1.0" encoding="UTF-8"?>
 <request build="wp800CF02_001_30" type="update" version="8.0.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PortalConfig_8.0.0.xsd">
       <status element="all" result="ok"/>

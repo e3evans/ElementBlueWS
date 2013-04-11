@@ -1,8 +1,14 @@
 package com.ibm.filemanager;
 
-import java.io.*;
-import java.util.*;
-import javax.portlet.*;
+import java.io.IOException;
+
+import javax.portlet.ActionRequest;
+import javax.portlet.ActionResponse;
+import javax.portlet.GenericPortlet;
+import javax.portlet.PortletException;
+import javax.portlet.PortletRequestDispatcher;
+import javax.portlet.RenderRequest;
+import javax.portlet.RenderResponse;
 
 /**
  * A sample portlet based on GenericPortlet
