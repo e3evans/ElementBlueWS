@@ -27,8 +27,8 @@ public class FileManagerServlet extends HttpServlet {
         // Get requested file by path info.
         String requestedFile = request.getParameter("fileName");
 
-        // Check if file is actually supplied to the request URI.
-        if (requestedFile == null) {
+        // Check if file is actually supplied to the request URI & it must contain the secure folder name to continue.  
+        if (requestedFile == null || requestedFile.indexOf("/webdev")==-1) {
             // Do your thing if the file is not supplied to the request URI.
             // Throw an exception, or send 404, or show default/warning page, or just ignore it.
             response.sendError(HttpServletResponse.SC_NOT_FOUND); // 404.
