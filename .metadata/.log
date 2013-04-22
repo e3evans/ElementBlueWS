@@ -2842,3 +2842,92 @@ Binding(CTRL+SHIFT+P,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SESSION 2013-04-19 14:30:19.213 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.7.0 IBM J9 2.6 Windows 7 amd64-64 Compressed References 20120809_118929 (JIT enabled, AOT enabled)
+J9VM - R26_Java726_SR2_20120809_0948_B118929
+JIT  - r11.b01_20120808_24925
+GC   - R26_Java726_SR2_20120809_0948_B118929_CMPRSS
+J9CL - 20120809_118929
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.ibm.rational.rad.product.v85.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.rad.product.v85.ide
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-19 14:30:32.387
+!MESSAGE Project facet osgi.subsystem has not been defined. It is used in plugin com.ibm.ws.st.osgi.core.
+
+!ENTRY org.eclipse.ui.workbench 4 0 2013-04-19 14:30:47.651
+!MESSAGE Module cannot be null
+!STACK 0
+java.lang.IllegalArgumentException: Module cannot be null
+	at org.eclipse.wst.server.core.internal.Server.removeServerListener(Unknown Source)
+	at org.eclipse.wst.server.ui.internal.cnf.ServersView2.dispose(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPartReference.doDisposePart(Unknown Source)
+	at org.eclipse.ui.internal.ViewReference.doDisposePart(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPartReference.dispose(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.disposePart(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.partRemoved(Unknown Source)
+	at org.eclipse.ui.internal.ViewFactory.releaseView(Unknown Source)
+	at org.eclipse.ui.internal.Perspective.dispose(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.dispose(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchWindow.closeAllPages(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchWindow.hardClose(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$0(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchWindow$5.run(Unknown Source)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(Unknown Source)
+	at org.eclipse.jface.window.WindowManager.close(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$18.run(Unknown Source)
+	at org.eclipse.core.runtime.SafeRunner.run(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.busyClose(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$15(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$25.run(Unknown Source)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.close(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.restart(Unknown Source)
+	at org.eclipse.ui.internal.ide.actions.OpenWorkspaceAction.restart(Unknown Source)
+	at org.eclipse.ui.internal.ide.actions.OpenWorkspaceAction.access$0(Unknown Source)
+	at org.eclipse.ui.internal.ide.actions.OpenWorkspaceAction$WorkspaceMRUAction.run(Unknown Source)
+	at org.eclipse.jface.action.Action.runWithEvent(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(Unknown Source)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$4(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$7.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(Unknown Source)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.main(Unknown Source)
+!SESSION 2013-04-19 16:17:24.423 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.7.0 IBM J9 2.6 Windows 7 amd64-64 Compressed References 20120809_118929 (JIT enabled, AOT enabled)
+J9VM - R26_Java726_SR2_20120809_0948_B118929
+JIT  - r11.b01_20120808_24925
+GC   - R26_Java726_SR2_20120809_0948_B118929_CMPRSS
+J9CL - 20120809_118929
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.ibm.rational.rad.product.v85.ide
+Command-line arguments:  -data C:\GitProjects\ElementBlueWS -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.rad.product.v85.ide
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-04-19 16:17:29.260
+!MESSAGE Project facet osgi.subsystem has not been defined. It is used in plugin com.ibm.ws.st.osgi.core.
