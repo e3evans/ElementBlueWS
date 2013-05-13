@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" id="com.ibm.jsfportlet.JSFPortlet.08349848e3">
+	<portlet>
+		<portlet-name>JSFPortlet</portlet-name>
+		<display-name xml:lang="en">JSFPortlet</display-name>
+		<display-name>JSFPortlet</display-name>
+		<portlet-class>com.ibm.jsfportlet.JSFPortlet</portlet-class>
+		<init-param>
+			<name>com.ibm.faces.portlet.page.view</name>
+			<value>/JSFPortletView.xhtml</value>
+		</init-param>
+		<init-param>
+			<name>com.ibm.faces.portlet.page.edit</name>
+			<value>/JSFPortletEdit.xhtml</value>
+		</init-param>
+		<init-param>
+			<name>com.ibm.faces.portlet.page.config</name>
+			<value>/JSFPortletConfig.xhtml</value>
+		</init-param>
+		<init-param>
+			<name>com.ibm.faces.portlet.page.edit_defaults</name>
+			<value>/JSFPortletEditDefaults.xhtml</value>
+		</init-param>
+		<init-param>
+			<name>wps.markup</name>
+			<value>html</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+			<portlet-mode>edit</portlet-mode>
+			<portlet-mode>config</portlet-mode>
+			<portlet-mode>edit_defaults</portlet-mode>
+		</supports>
+		<resource-bundle>com.ibm.jsfportlet.nl.JSFPortletResource</resource-bundle>
+		<portlet-info>
+			<title>JSFPortlet</title>
+			<short-title>JSFPortlet</short-title>
+			<keywords>JSFPortlet</keywords>
+		</portlet-info>
+	</portlet>
+	<custom-portlet-mode>
+		<portlet-mode>config</portlet-mode>
+	</custom-portlet-mode>
+	<custom-portlet-mode>
+		<portlet-mode>edit_defaults</portlet-mode>
+	</custom-portlet-mode>
+	<default-namespace>http://JSFPortlet/</default-namespace>
+</portlet-app>

@@ -17,3 +17,9 @@
 2013-04-11 09:20:33,141 [Start Help Server] INFO  org.mortbay.log - Started SelectChannelConnector@0.0.0.0:59356
 2013-04-11 09:28:16,945 [Worker-2] INFO  org.mortbay.log - jetty-6.1.x
 2013-04-11 09:28:16,948 [Worker-2] INFO  org.mortbay.log - Started SocketConnector@0.0.0.0:59718
+2013-05-01 15:01:45,633 [Worker-7] INFO  org.mortbay.log - Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog
+2013-05-01 15:01:45,668 [Worker-7] INFO  org.mortbay.log - jetty-6.1.x
+2013-05-01 15:01:45,679 [Worker-7] INFO  org.mortbay.log - Started SocketConnector@0.0.0.0:55288
+2013-05-03 16:14:29,355 [Worker-4] INFO  org.mortbay.log - Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog
+2013-05-03 16:14:29,390 [Worker-4] INFO  org.mortbay.log - jetty-6.1.x
+2013-05-03 16:14:29,432 [Worker-4] INFO  org.mortbay.log - Started SocketConnector@0.0.0.0:52802

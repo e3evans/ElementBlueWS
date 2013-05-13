@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><libraryInfos>
 <libraryInfo home="C:\IBM\WebSphere8\AppServer\java\jre" version="1.6.0">
 <bootpath>
-<entry path="C:\IBM\WebSphere8\AppServer\java\jre\bin\default\jclSC160\vm.jar"/>
+<entry path="C:\IBM\WebSphere8\AppServer\java\jre\bin\compressedrefs\jclSC160\vm.jar"/>
 <entry path="C:\IBM\WebSphere8\AppServer\java\jre\lib\annotation.jar"/>
 <entry path="C:\IBM\WebSphere8\AppServer\java\jre\lib\beans.jar"/>
 <entry path="C:\IBM\WebSphere8\AppServer\java\jre\lib\java.util.jar"/>
@@ -24,7 +24,6 @@
 <entry path="C:\IBM\WebSphere8\AppServer\java\jre\lib\ibmjgssprovider.jar"/>
 <entry path="C:\IBM\WebSphere8\AppServer\java\jre\lib\ibmjsseprovider2.jar"/>
 <entry path="C:\IBM\WebSphere8\AppServer\java\jre\lib\ibmcertpathprovider.jar"/>
-<entry path="C:\IBM\WebSphere8\AppServer\java\jre\lib\ibmxmlcrypto.jar"/>
 <entry path="C:\IBM\WebSphere8\AppServer\java\jre\lib\management-agent.jar"/>
 <entry path="C:\IBM\WebSphere8\AppServer\java\jre\lib\xml.jar"/>
 <entry path="C:\IBM\WebSphere8\AppServer\java\jre\lib\jlm.jar"/>
@@ -35,6 +34,40 @@
 </extensionDirs>
 <endorsedDirs>
 <entry path="C:\IBM\WebSphere8\AppServer\java\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\IBM\SDP85\jdk" version="1.7.0">
+<bootpath>
+<entry path="C:\IBM\SDP85\jdk\jre\lib\endorsed\jaxws-api.jar"/>
+<entry path="C:\IBM\SDP85\jdk\jre\lib\endorsed\jaxb-api.jar"/>
+<entry path="C:\IBM\SDP85\jdk\jre\lib\endorsed\javax.j2ee.annotation.jar"/>
+<entry path="C:\IBM\SDP85\jdk\jre\bin\default\jclSC170\vm.jar"/>
+<entry path="C:\IBM\SDP85\jdk\jre\lib\se-service.jar"/>
+<entry path="C:\IBM\SDP85\jdk\jre\lib\math.jar"/>
+<entry path="C:\IBM\SDP85\jdk\jre\lib\jlm.jar"/>
+<entry path="C:\IBM\SDP85\jdk\jre\lib\ibmorb.jar"/>
+<entry path="C:\IBM\SDP85\jdk\jre\lib\ibmorbapi.jar"/>
+<entry path="C:\IBM\SDP85\jdk\jre\lib\ibmcfw.jar"/>
+<entry path="C:\IBM\SDP85\jdk\jre\lib\ibmpkcs.jar"/>
+<entry path="C:\IBM\SDP85\jdk\jre\lib\ibmcertpathfw.jar"/>
+<entry path="C:\IBM\SDP85\jdk\jre\lib\ibmjgssfw.jar"/>
+<entry path="C:\IBM\SDP85\jdk\jre\lib\ibmjssefw.jar"/>
+<entry path="C:\IBM\SDP85\jdk\jre\lib\ibmsaslfw.jar"/>
+<entry path="C:\IBM\SDP85\jdk\jre\lib\ibmjcefw.jar"/>
+<entry path="C:\IBM\SDP85\jdk\jre\lib\ibmjgssprovider.jar"/>
+<entry path="C:\IBM\SDP85\jdk\jre\lib\ibmjsseprovider2.jar"/>
+<entry path="C:\IBM\SDP85\jdk\jre\lib\ibmcertpathprovider.jar"/>
+<entry path="C:\IBM\SDP85\jdk\jre\lib\xmldsigfw.jar"/>
+<entry path="C:\IBM\SDP85\jdk\jre\lib\xml.jar"/>
+<entry path="C:\IBM\SDP85\jdk\jre\lib\charsets.jar"/>
+<entry path="C:\IBM\SDP85\jdk\jre\lib\resources.jar"/>
+<entry path="C:\IBM\SDP85\jdk\jre\lib\rt.jar"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\IBM\SDP85\jdk\jre\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\IBM\SDP85\jdk\jre\lib\endorsed"/>
 </endorsedDirs>
 </libraryInfo>
 <libraryInfo home="C:\IBM\WebSphere7\AppServer\java\jre" version="1.6.0">
@@ -73,40 +106,6 @@
 </extensionDirs>
 <endorsedDirs>
 <entry path="C:\IBM\WebSphere7\AppServer\java\jre\lib\endorsed"/>
-</endorsedDirs>
-</libraryInfo>
-<libraryInfo home="C:\IBM\SDP85\jdk" version="1.7.0">
-<bootpath>
-<entry path="C:\IBM\SDP85\jdk\jre\lib\endorsed\jaxws-api.jar"/>
-<entry path="C:\IBM\SDP85\jdk\jre\lib\endorsed\jaxb-api.jar"/>
-<entry path="C:\IBM\SDP85\jdk\jre\lib\endorsed\javax.j2ee.annotation.jar"/>
-<entry path="C:\IBM\SDP85\jdk\jre\bin\default\jclSC170\vm.jar"/>
-<entry path="C:\IBM\SDP85\jdk\jre\lib\se-service.jar"/>
-<entry path="C:\IBM\SDP85\jdk\jre\lib\math.jar"/>
-<entry path="C:\IBM\SDP85\jdk\jre\lib\jlm.jar"/>
-<entry path="C:\IBM\SDP85\jdk\jre\lib\ibmorb.jar"/>
-<entry path="C:\IBM\SDP85\jdk\jre\lib\ibmorbapi.jar"/>
-<entry path="C:\IBM\SDP85\jdk\jre\lib\ibmcfw.jar"/>
-<entry path="C:\IBM\SDP85\jdk\jre\lib\ibmpkcs.jar"/>
-<entry path="C:\IBM\SDP85\jdk\jre\lib\ibmcertpathfw.jar"/>
-<entry path="C:\IBM\SDP85\jdk\jre\lib\ibmjgssfw.jar"/>
-<entry path="C:\IBM\SDP85\jdk\jre\lib\ibmjssefw.jar"/>
-<entry path="C:\IBM\SDP85\jdk\jre\lib\ibmsaslfw.jar"/>
-<entry path="C:\IBM\SDP85\jdk\jre\lib\ibmjcefw.jar"/>
-<entry path="C:\IBM\SDP85\jdk\jre\lib\ibmjgssprovider.jar"/>
-<entry path="C:\IBM\SDP85\jdk\jre\lib\ibmjsseprovider2.jar"/>
-<entry path="C:\IBM\SDP85\jdk\jre\lib\ibmcertpathprovider.jar"/>
-<entry path="C:\IBM\SDP85\jdk\jre\lib\xmldsigfw.jar"/>
-<entry path="C:\IBM\SDP85\jdk\jre\lib\xml.jar"/>
-<entry path="C:\IBM\SDP85\jdk\jre\lib\charsets.jar"/>
-<entry path="C:\IBM\SDP85\jdk\jre\lib\resources.jar"/>
-<entry path="C:\IBM\SDP85\jdk\jre\lib\rt.jar"/>
-</bootpath>
-<extensionDirs>
-<entry path="C:\IBM\SDP85\jdk\jre\lib\ext"/>
-</extensionDirs>
-<endorsedDirs>
-<entry path="C:\IBM\SDP85\jdk\jre\lib\endorsed"/>
 </endorsedDirs>
 </libraryInfo>
 </libraryInfos>
