@@ -34,6 +34,7 @@ public class FileManagerPortlet extends GenericPortlet {
 		request.setAttribute("folderUrl",request.getPreferences().getValue(PREF_FOLDER_URL, ""));
 		
 		System.out.println("THIS IS A TEST.");
+		System.out.println("This is for Ian.");
 		
 		getPortletContext().getRequestDispatcher("/WEB-INF/jsp/configure-filemanager.jsp").include(request,response);
 	}
