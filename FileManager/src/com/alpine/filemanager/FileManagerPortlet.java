@@ -33,6 +33,8 @@ public class FileManagerPortlet extends GenericPortlet {
 		request.setAttribute("maxHeight", request.getPreferences().getValue(PREF_MAX_HEIGHT, ""));
 		request.setAttribute("folderUrl",request.getPreferences().getValue(PREF_FOLDER_URL, ""));
 		
+		System.out.println("THIS IS A TEST.");
+		
 		getPortletContext().getRequestDispatcher("/WEB-INF/jsp/configure-filemanager.jsp").include(request,response);
 	}
 
