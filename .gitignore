@@ -20,6 +20,8 @@ local.properties
 .loadpath
 *.class
 .plugins
+.metadata
+*.metadata
 
 
 # External tool builders
