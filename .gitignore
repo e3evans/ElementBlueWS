@@ -22,7 +22,7 @@ local.properties
 .plugins
 .metadata
 *.metadata
-.metadata/
+.metadata/**/*
 
 
 # External tool builders

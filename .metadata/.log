@@ -3684,3 +3684,723 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ibm.ratio
 
 !ENTRY org.eclipse.wst.common.project.facet.core 4 0 2013-05-13 15:02:58.466
 !MESSAGE Project facet osgi.subsystem has not been defined. It is used in plugin com.ibm.ws.st.osgi.core.
+
+
+XML Access Failure forhttp://localhost:10039/wps/config atWed May 15 11:29:55 CDT 2013
+Message:EJPXA0043E: An error occurred while creating or updating the resource.
+EJPPD0015E: Portlet application manager failed when user xmlaccess scripting user executed command InstallWebApplication.
+EJPPF0178E: Resource bundle com.ibm.jsfportlet.nl.JSFPortletResource could not be loaded for locale en.
+Can't find resource for bundle com.ibm.jsfportlet.nl.JSFPortletResource, key en
+Request:
+<?xml version="1.0" encoding="UTF-8"?>
+<request create-oids="true" type="update" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PortalConfig_8.0.0.xsd">
+  <portal action="locate">
+    <web-app action="update" active="true" predeployed="true" removable="true" uid="com.ibm.jsfportlet.JSFPortlet.08349848e3.webmod">
+      <url>file://localhost/C:/GitProjects/ElementBlueWS/JSFPortlet/WebContent</url>
+      <context-root>/.JSFPortlet</context-root>
+      <display-name>.JSFPortlet</display-name>
+      <portlet-app action="update" active="true" name="JSFPortlet.war" uid="com.ibm.jsfportlet.JSFPortlet.08349848e3">
+        <access-control>
+          <role actionset="Privileged User" update="set">
+            <mapping subjectid="all authenticated portal users" subjecttype="user_group" update="set"/>
+          </role>
+        </access-control>
+        <portlet action="update" active="true" name="JSFPortlet" provided="false"/>
+      </portlet-app>
+    </web-app>
+  </portal>
+</request>
+
+
+Response:
+<?xml version="1.0" encoding="UTF-8"?>
+<request build="wp800CF02_001_30" type="update" version="8.0.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PortalConfig_8.0.0.xsd">
+      <status element="[web-app uid=com.ibm.jsfportlet.JSFPortlet.08349848e3.webmod]" result="failed">
+            <message id="EJPXA0043E">EJPXA0043E: An error occurred while creating or updating the resource.</message>
+
+            <message id="EJPPD0015E">EJPPD0015E: Portlet application manager failed when user xmlaccess scripting user executed command InstallWebApplication.</message>
+
+            <message id="EJPPF0178E">EJPPF0178E: Resource bundle com.ibm.jsfportlet.nl.JSFPortletResource could not be loaded for locale en.</message>
+
+            <message>Can't find resource for bundle com.ibm.jsfportlet.nl.JSFPortletResource, key en</message>
+
+            <stacktrace>
+com.ibm.wps.command.xml.XmlCommandException: EJPXA0043E: An error occurred while creating or updating the resource. [web-app uid=com.ibm.jsfportlet.JSFPortlet.08349848e3.webmod]
+	at com.ibm.wps.command.xml.ConfigItem.doUpdate(ConfigItem.java:610)
+	at com.ibm.wps.command.xml.UpdateEngine.processItem(UpdateEngine.java:216)
+	at com.ibm.wps.command.xml.UpdateEngine.updateTopLevelItem(UpdateEngine.java:171)
+	at com.ibm.wps.command.xml.XmlAccessHandler.fillObjectModel(XmlAccessHandler.java:330)
+	at com.ibm.wps.command.xml.XmlAccessHandler.endElement(XmlAccessHandler.java:212)
+	at org.apache.xerces.parsers.AbstractSAXParser.endElement(Unknown Source)
+	at org.apache.xerces.impl.xs.XMLSchemaValidator.endElement(Unknown Source)
+	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.SAXParserImpl.parse(Unknown Source)
+	at com.ibm.wps.command.xml.XmlUtils.parseSax(XmlUtils.java:283)
+	at com.ibm.wps.command.xml.Engine.forInputSourceSax(Engine.java:233)
+	at com.ibm.wps.command.xml.Engine.forInputSourceSax(Engine.java:174)
+	at com.ibm.wps.command.xml.XmlCommand.internalExecute(XmlCommand.java:242)
+	at com.ibm.wps.command.xml.XmlCommand.execute(XmlCommand.java:185)
+	at com.ibm.wps.command.xml.XmlCommandServlet.processInternal(XmlCommandServlet.java:332)
+	at com.ibm.wps.command.xml.XmlCommandServlet.process(XmlCommandServlet.java:309)
+	at com.ibm.wps.command.xml.XmlCommandServlet.doPost(XmlCommandServlet.java:234)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:595)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:668)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1225)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:775)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:457)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapperImpl.handleRequest(ServletWrapperImpl.java:178)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.invokeTarget(WebAppFilterChain.java:136)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:97)
+	at com.ibm.wps.project.filter.ProjectIdFilter.doFilterWithoutProjectID(ProjectIdFilter.java:331)
+	at com.ibm.wps.project.filter.ProjectIdFilter.doFilter(ProjectIdFilter.java:243)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:195)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:91)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.doFilter(WebAppFilterManager.java:928)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1025)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:87)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:908)
+	at com.ibm.ws.webcontainer.WSWebContainer.handleRequest(WSWebContainer.java:1662)
+	at com.ibm.ws.webcontainer.channel.WCChannelLink.ready(WCChannelLink.java:195)
+	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:453)
+	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.handleNewRequest(HttpInboundLink.java:515)
+	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.processRequest(HttpInboundLink.java:306)
+	at com.ibm.ws.http.channel.inbound.impl.HttpICLReadCallback.complete(HttpICLReadCallback.java:83)
+	at com.ibm.ws.tcp.channel.impl.AioReadCompletionListener.futureCompleted(AioReadCompletionListener.java:166)
+	at com.ibm.io.async.AbstractAsyncFuture.invokeCallback(AbstractAsyncFuture.java:217)
+	at com.ibm.io.async.AsyncChannelFuture.fireCompletionActions(AsyncChannelFuture.java:161)
+	at com.ibm.io.async.AsyncFuture.completed(AsyncFuture.java:138)
+	at com.ibm.io.async.ResultHandler.complete(ResultHandler.java:204)
+	at com.ibm.io.async.ResultHandler.runEventProcessingLoop(ResultHandler.java:775)
+	at com.ibm.io.async.ResultHandler$2.run(ResultHandler.java:905)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:1691)
+Caused by: com.ibm.wps.command.CommandFailedException: EJPPD0015E: Portlet application manager failed when user xmlaccess scripting user executed command InstallWebApplication.
+WrappedException is: com.ibm.wps.pe.mgr.exceptions.WarIOException: EJPPF0178E: Resource bundle com.ibm.jsfportlet.nl.JSFPortletResource could not be loaded for locale en.
+	at com.ibm.wps.command.applications.AbstractApplicationsCommand.throwAppMgrException(AbstractApplicationsCommand.java:585)
+	at com.ibm.wps.command.applications.InstallWebApplicationCommand.execute(InstallWebApplicationCommand.java:140)
+	at com.ibm.wps.command.xml.items.WebApplicationItem.createNormal(WebApplicationItem.java:662)
+	at com.ibm.wps.command.xml.items.WebApplicationItem.create(WebApplicationItem.java:569)
+	at com.ibm.wps.command.xml.ConfigItem.doUpdate(ConfigItem.java:584)
+	... 53 more
+Caused by: com.ibm.wps.pe.mgr.exceptions.WarIOException: EJPPF0178E: Resource bundle com.ibm.jsfportlet.nl.JSFPortletResource could not be loaded for locale en.
+	at com.ibm.wps.pe.mgr.deployment.std.DeploymentDataParserStd.addLocaleSpecificPortletData(DeploymentDataParserStd.java:520)
+	at com.ibm.wps.pe.mgr.deployment.std.DeploymentDataParserStd.getPortletApplicationInfo(DeploymentDataParserStd.java:300)
+	at com.ibm.wps.pe.mgr.deployment.std.DeploymentManagerStandardImpl.getPortletApplicationInfo(DeploymentManagerStandardImpl.java:182)
+	at com.ibm.wps.pe.mgr.deployment.AbstractPortletDeploymentManagerImpl.getApplicationInfo(AbstractPortletDeploymentManagerImpl.java:556)
+	at com.ibm.wps.pe.mgr.deployment.AbstractDeploymentManagerImpl.getApplicationInfo(AbstractDeploymentManagerImpl.java:1583)
+	at com.ibm.wps.pe.mgr.deployment.AbstractDeploymentManagerImpl.install(AbstractDeploymentManagerImpl.java:297)
+	at com.ibm.wps.pe.mgr.AbstractApplicationManagerImpl.installWebModule(AbstractApplicationManagerImpl.java:585)
+	at com.ibm.wps.pe.mgr.AbstractApplicationManagerImpl.installWebModule(AbstractApplicationManagerImpl.java:492)
+	at com.ibm.wps.command.applications.InstallWebApplicationCommand.execute(InstallWebApplicationCommand.java:132)
+	... 56 more
+Caused by: java.util.MissingResourceException: Can't find resource for bundle com.ibm.jsfportlet.nl.JSFPortletResource, key en
+	at java.util.ResourceBundle.getBundle(ResourceBundle.java:172)
+	at com.ibm.wps.pe.mgr.deployment.std.DeploymentDataParserStd.addLocaleSpecificPortletData(DeploymentDataParserStd.java:487)
+	... 64 more
+
+com.ibm.wps.command.CommandFailedException: EJPPD0015E: Portlet application manager failed when user xmlaccess scripting user executed command InstallWebApplication.
+WrappedException is: com.ibm.wps.pe.mgr.exceptions.WarIOException: EJPPF0178E: Resource bundle com.ibm.jsfportlet.nl.JSFPortletResource could not be loaded for locale en.
+StackTrace of the WrappedException:
+com.ibm.wps.pe.mgr.exceptions.WarIOException: EJPPF0178E: Resource bundle com.ibm.jsfportlet.nl.JSFPortletResource could not be loaded for locale en.
+	at com.ibm.wps.pe.mgr.deployment.std.DeploymentDataParserStd.addLocaleSpecificPortletData(DeploymentDataParserStd.java:520)
+	at com.ibm.wps.pe.mgr.deployment.std.DeploymentDataParserStd.getPortletApplicationInfo(DeploymentDataParserStd.java:300)
+	at com.ibm.wps.pe.mgr.deployment.std.DeploymentManagerStandardImpl.getPortletApplicationInfo(DeploymentManagerStandardImpl.java:182)
+	at com.ibm.wps.pe.mgr.deployment.AbstractPortletDeploymentManagerImpl.getApplicationInfo(AbstractPortletDeploymentManagerImpl.java:556)
+	at com.ibm.wps.pe.mgr.deployment.AbstractDeploymentManagerImpl.getApplicationInfo(AbstractDeploymentManagerImpl.java:1583)
+	at com.ibm.wps.pe.mgr.deployment.AbstractDeploymentManagerImpl.install(AbstractDeploymentManagerImpl.java:297)
+	at com.ibm.wps.pe.mgr.AbstractApplicationManagerImpl.installWebModule(AbstractApplicationManagerImpl.java:585)
+	at com.ibm.wps.pe.mgr.AbstractApplicationManagerImpl.installWebModule(AbstractApplicationManagerImpl.java:492)
+	at com.ibm.wps.command.applications.InstallWebApplicationCommand.execute(InstallWebApplicationCommand.java:132)
+	at com.ibm.wps.command.xml.items.WebApplicationItem.createNormal(WebApplicationItem.java:662)
+	at com.ibm.wps.command.xml.items.WebApplicationItem.create(WebApplicationItem.java:569)
+	at com.ibm.wps.command.xml.ConfigItem.doUpdate(ConfigItem.java:584)
+	at com.ibm.wps.command.xml.UpdateEngine.processItem(UpdateEngine.java:216)
+	at com.ibm.wps.command.xml.UpdateEngine.updateTopLevelItem(UpdateEngine.java:171)
+	at com.ibm.wps.command.xml.XmlAccessHandler.fillObjectModel(XmlAccessHandler.java:330)
+	at com.ibm.wps.command.xml.XmlAccessHandler.endElement(XmlAccessHandler.java:212)
+	at org.apache.xerces.parsers.AbstractSAXParser.endElement(Unknown Source)
+	at org.apache.xerces.impl.xs.XMLSchemaValidator.endElement(Unknown Source)
+	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.SAXParserImpl.parse(Unknown Source)
+	at com.ibm.wps.command.xml.XmlUtils.parseSax(XmlUtils.java:283)
+	at com.ibm.wps.command.xml.Engine.forInputSourceSax(Engine.java:233)
+	at com.ibm.wps.command.xml.Engine.forInputSourceSax(Engine.java:174)
+	at com.ibm.wps.command.xml.XmlCommand.internalExecute(XmlCommand.java:242)
+	at com.ibm.wps.command.xml.XmlCommand.execute(XmlCommand.java:185)
+	at com.ibm.wps.command.xml.XmlCommandServlet.processInternal(XmlCommandServlet.java:332)
+	at com.ibm.wps.command.xml.XmlCommandServlet.process(XmlCommandServlet.java:309)
+	at com.ibm.wps.command.xml.XmlCommandServlet.doPost(XmlCommandServlet.java:234)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:595)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:668)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1225)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:775)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:457)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapperImpl.handleRequest(ServletWrapperImpl.java:178)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.invokeTarget(WebAppFilterChain.java:136)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:97)
+	at com.ibm.wps.project.filter.ProjectIdFilter.doFilterWithoutProjectID(ProjectIdFilter.java:331)
+	at com.ibm.wps.project.filter.ProjectIdFilter.doFilter(ProjectIdFilter.java:243)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:195)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:91)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.doFilter(WebAppFilterManager.java:928)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1025)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:87)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:908)
+	at com.ibm.ws.webcontainer.WSWebContainer.handleRequest(WSWebContainer.java:1662)
+	at com.ibm.ws.webcontainer.channel.WCChannelLink.ready(WCChannelLink.java:195)
+	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:453)
+	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.handleNewRequest(HttpInboundLink.java:515)
+	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.processRequest(HttpInboundLink.java:306)
+	at com.ibm.ws.http.channel.inbound.impl.HttpICLReadCallback.complete(HttpICLReadCallback.java:83)
+	at com.ibm.ws.tcp.channel.impl.AioReadCompletionListener.futureCompleted(AioReadCompletionListener.java:166)
+	at com.ibm.io.async.AbstractAsyncFuture.invokeCallback(AbstractAsyncFuture.java:217)
+	at com.ibm.io.async.AsyncChannelFuture.fireCompletionActions(AsyncChannelFuture.java:161)
+	at com.ibm.io.async.AsyncFuture.completed(AsyncFuture.java:138)
+	at com.ibm.io.async.ResultHandler.complete(ResultHandler.java:204)
+	at com.ibm.io.async.ResultHandler.runEventProcessingLoop(ResultHandler.java:775)
+	at com.ibm.io.async.ResultHandler$2.run(ResultHandler.java:905)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:1691)
+Caused by: java.util.MissingResourceException: Can't find resource for bundle com.ibm.jsfportlet.nl.JSFPortletResource, key en
+	at java.util.ResourceBundle.getBundle(ResourceBundle.java:172)
+	at com.ibm.wps.pe.mgr.deployment.std.DeploymentDataParserStd.addLocaleSpecificPortletData(DeploymentDataParserStd.java:487)
+	... 64 more
+
+com.ibm.wps.pe.mgr.exceptions.WarIOException: EJPPF0178E: Resource bundle com.ibm.jsfportlet.nl.JSFPortletResource could not be loaded for locale en.
+	at com.ibm.wps.pe.mgr.deployment.std.DeploymentDataParserStd.addLocaleSpecificPortletData(DeploymentDataParserStd.java:520)
+	at com.ibm.wps.pe.mgr.deployment.std.DeploymentDataParserStd.getPortletApplicationInfo(DeploymentDataParserStd.java:300)
+	at com.ibm.wps.pe.mgr.deployment.std.DeploymentManagerStandardImpl.getPortletApplicationInfo(DeploymentManagerStandardImpl.java:182)
+	at com.ibm.wps.pe.mgr.deployment.AbstractPortletDeploymentManagerImpl.getApplicationInfo(AbstractPortletDeploymentManagerImpl.java:556)
+	at com.ibm.wps.pe.mgr.deployment.AbstractDeploymentManagerImpl.getApplicationInfo(AbstractDeploymentManagerImpl.java:1583)
+	at com.ibm.wps.pe.mgr.deployment.AbstractDeploymentManagerImpl.install(AbstractDeploymentManagerImpl.java:297)
+	at com.ibm.wps.pe.mgr.AbstractApplicationManagerImpl.installWebModule(AbstractApplicationManagerImpl.java:585)
+	at com.ibm.wps.pe.mgr.AbstractApplicationManagerImpl.installWebModule(AbstractApplicationManagerImpl.java:492)
+	at com.ibm.wps.command.applications.InstallWebApplicationCommand.execute(InstallWebApplicationCommand.java:132)
+	at com.ibm.wps.command.xml.items.WebApplicationItem.createNormal(WebApplicationItem.java:662)
+	at com.ibm.wps.command.xml.items.WebApplicationItem.create(WebApplicationItem.java:569)
+	at com.ibm.wps.command.xml.ConfigItem.doUpdate(ConfigItem.java:584)
+	at com.ibm.wps.command.xml.UpdateEngine.processItem(UpdateEngine.java:216)
+	at com.ibm.wps.command.xml.UpdateEngine.updateTopLevelItem(UpdateEngine.java:171)
+	at com.ibm.wps.command.xml.XmlAccessHandler.fillObjectModel(XmlAccessHandler.java:330)
+	at com.ibm.wps.command.xml.XmlAccessHandler.endElement(XmlAccessHandler.java:212)
+	at org.apache.xerces.parsers.AbstractSAXParser.endElement(Unknown Source)
+	at org.apache.xerces.impl.xs.XMLSchemaValidator.endElement(Unknown Source)
+	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.SAXParserImpl.parse(Unknown Source)
+	at com.ibm.wps.command.xml.XmlUtils.parseSax(XmlUtils.java:283)
+	at com.ibm.wps.command.xml.Engine.forInputSourceSax(Engine.java:233)
+	at com.ibm.wps.command.xml.Engine.forInputSourceSax(Engine.java:174)
+	at com.ibm.wps.command.xml.XmlCommand.internalExecute(XmlCommand.java:242)
+	at com.ibm.wps.command.xml.XmlCommand.execute(XmlCommand.java:185)
+	at com.ibm.wps.command.xml.XmlCommandServlet.processInternal(XmlCommandServlet.java:332)
+	at com.ibm.wps.command.xml.XmlCommandServlet.process(XmlCommandServlet.java:309)
+	at com.ibm.wps.command.xml.XmlCommandServlet.doPost(XmlCommandServlet.java:234)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:595)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:668)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1225)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:775)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:457)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapperImpl.handleRequest(ServletWrapperImpl.java:178)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.invokeTarget(WebAppFilterChain.java:136)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:97)
+	at com.ibm.wps.project.filter.ProjectIdFilter.doFilterWithoutProjectID(ProjectIdFilter.java:331)
+	at com.ibm.wps.project.filter.ProjectIdFilter.doFilter(ProjectIdFilter.java:243)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:195)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:91)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.doFilter(WebAppFilterManager.java:928)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1025)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:87)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:908)
+	at com.ibm.ws.webcontainer.WSWebContainer.handleRequest(WSWebContainer.java:1662)
+	at com.ibm.ws.webcontainer.channel.WCChannelLink.ready(WCChannelLink.java:195)
+	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:453)
+	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.handleNewRequest(HttpInboundLink.java:515)
+	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.processRequest(HttpInboundLink.java:306)
+	at com.ibm.ws.http.channel.inbound.impl.HttpICLReadCallback.complete(HttpICLReadCallback.java:83)
+	at com.ibm.ws.tcp.channel.impl.AioReadCompletionListener.futureCompleted(AioReadCompletionListener.java:166)
+	at com.ibm.io.async.AbstractAsyncFuture.invokeCallback(AbstractAsyncFuture.java:217)
+	at com.ibm.io.async.AsyncChannelFuture.fireCompletionActions(AsyncChannelFuture.java:161)
+	at com.ibm.io.async.AsyncFuture.completed(AsyncFuture.java:138)
+	at com.ibm.io.async.ResultHandler.complete(ResultHandler.java:204)
+	at com.ibm.io.async.ResultHandler.runEventProcessingLoop(ResultHandler.java:775)
+	at com.ibm.io.async.ResultHandler$2.run(ResultHandler.java:905)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:1691)
+Caused by: java.util.MissingResourceException: Can't find resource for bundle com.ibm.jsfportlet.nl.JSFPortletResource, key en
+	at java.util.ResourceBundle.getBundle(ResourceBundle.java:172)
+	at com.ibm.wps.pe.mgr.deployment.std.DeploymentDataParserStd.addLocaleSpecificPortletData(DeploymentDataParserStd.java:487)
+	... 64 more
+
+java.util.MissingResourceException: Can't find resource for bundle com.ibm.jsfportlet.nl.JSFPortletResource, key en
+	at java.util.ResourceBundle.getBundle(ResourceBundle.java:172)
+	at com.ibm.wps.pe.mgr.deployment.std.DeploymentDataParserStd.addLocaleSpecificPortletData(DeploymentDataParserStd.java:487)
+	at com.ibm.wps.pe.mgr.deployment.std.DeploymentDataParserStd.getPortletApplicationInfo(DeploymentDataParserStd.java:300)
+	at com.ibm.wps.pe.mgr.deployment.std.DeploymentManagerStandardImpl.getPortletApplicationInfo(DeploymentManagerStandardImpl.java:182)
+	at com.ibm.wps.pe.mgr.deployment.AbstractPortletDeploymentManagerImpl.getApplicationInfo(AbstractPortletDeploymentManagerImpl.java:556)
+	at com.ibm.wps.pe.mgr.deployment.AbstractDeploymentManagerImpl.getApplicationInfo(AbstractDeploymentManagerImpl.java:1583)
+	at com.ibm.wps.pe.mgr.deployment.AbstractDeploymentManagerImpl.install(AbstractDeploymentManagerImpl.java:297)
+	at com.ibm.wps.pe.mgr.AbstractApplicationManagerImpl.installWebModule(AbstractApplicationManagerImpl.java:585)
+	at com.ibm.wps.pe.mgr.AbstractApplicationManagerImpl.installWebModule(AbstractApplicationManagerImpl.java:492)
+	at com.ibm.wps.command.applications.InstallWebApplicationCommand.execute(InstallWebApplicationCommand.java:132)
+	at com.ibm.wps.command.xml.items.WebApplicationItem.createNormal(WebApplicationItem.java:662)
+	at com.ibm.wps.command.xml.items.WebApplicationItem.create(WebApplicationItem.java:569)
+	at com.ibm.wps.command.xml.ConfigItem.doUpdate(ConfigItem.java:584)
+	at com.ibm.wps.command.xml.UpdateEngine.processItem(UpdateEngine.java:216)
+	at com.ibm.wps.command.xml.UpdateEngine.updateTopLevelItem(UpdateEngine.java:171)
+	at com.ibm.wps.command.xml.XmlAccessHandler.fillObjectModel(XmlAccessHandler.java:330)
+	at com.ibm.wps.command.xml.XmlAccessHandler.endElement(XmlAccessHandler.java:212)
+	at org.apache.xerces.parsers.AbstractSAXParser.endElement(Unknown Source)
+	at org.apache.xerces.impl.xs.XMLSchemaValidator.endElement(Unknown Source)
+	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.SAXParserImpl.parse(Unknown Source)
+	at com.ibm.wps.command.xml.XmlUtils.parseSax(XmlUtils.java:283)
+	at com.ibm.wps.command.xml.Engine.forInputSourceSax(Engine.java:233)
+	at com.ibm.wps.command.xml.Engine.forInputSourceSax(Engine.java:174)
+	at com.ibm.wps.command.xml.XmlCommand.internalExecute(XmlCommand.java:242)
+	at com.ibm.wps.command.xml.XmlCommand.execute(XmlCommand.java:185)
+	at com.ibm.wps.command.xml.XmlCommandServlet.processInternal(XmlCommandServlet.java:332)
+	at com.ibm.wps.command.xml.XmlCommandServlet.process(XmlCommandServlet.java:309)
+	at com.ibm.wps.command.xml.XmlCommandServlet.doPost(XmlCommandServlet.java:234)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:595)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:668)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1225)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:775)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:457)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapperImpl.handleRequest(ServletWrapperImpl.java:178)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.invokeTarget(WebAppFilterChain.java:136)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:97)
+	at com.ibm.wps.project.filter.ProjectIdFilter.doFilterWithoutProjectID(ProjectIdFilter.java:331)
+	at com.ibm.wps.project.filter.ProjectIdFilter.doFilter(ProjectIdFilter.java:243)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:195)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:91)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.doFilter(WebAppFilterManager.java:928)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1025)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:87)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:908)
+	at com.ibm.ws.webcontainer.WSWebContainer.handleRequest(WSWebContainer.java:1662)
+	at com.ibm.ws.webcontainer.channel.WCChannelLink.ready(WCChannelLink.java:195)
+	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:453)
+	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.handleNewRequest(HttpInboundLink.java:515)
+	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.processRequest(HttpInboundLink.java:306)
+	at com.ibm.ws.http.channel.inbound.impl.HttpICLReadCallback.complete(HttpICLReadCallback.java:83)
+	at com.ibm.ws.tcp.channel.impl.AioReadCompletionListener.futureCompleted(AioReadCompletionListener.java:166)
+	at com.ibm.io.async.AbstractAsyncFuture.invokeCallback(AbstractAsyncFuture.java:217)
+	at com.ibm.io.async.AsyncChannelFuture.fireCompletionActions(AsyncChannelFuture.java:161)
+	at com.ibm.io.async.AsyncFuture.completed(AsyncFuture.java:138)
+	at com.ibm.io.async.ResultHandler.complete(ResultHandler.java:204)
+	at com.ibm.io.async.ResultHandler.runEventProcessingLoop(ResultHandler.java:775)
+	at com.ibm.io.async.ResultHandler$2.run(ResultHandler.java:905)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:1691)
+
+</stacktrace>
+
+    </status>
+
+</request>
+
+
+
+!ENTRY com.ibm.etools.portal.server.tools.v8 4 0 2013-05-15 11:29:56.121
+!MESSAGE EJPXA0043E: An error occurred while creating or updating the resource.
+EJPPD0015E: Portlet application manager failed when user xmlaccess scripting user executed command InstallWebApplication.
+EJPPF0178E: Resource bundle com.ibm.jsfportlet.nl.JSFPortletResource could not be loaded for locale en.
+Can't find resource for bundle com.ibm.jsfportlet.nl.JSFPortletResource, key en
+!STACK 0
+com.ibm.etools.portal.server.tools.common.xmlaccess.XMLAccessException: EJPXA0043E: An error occurred while creating or updating the resource.
+EJPPD0015E: Portlet application manager failed when user xmlaccess scripting user executed command InstallWebApplication.
+EJPPF0178E: Resource bundle com.ibm.jsfportlet.nl.JSFPortletResource could not be loaded for locale en.
+Can't find resource for bundle com.ibm.jsfportlet.nl.JSFPortletResource, key en
+	at com.ibm.etools.portal.server.tools.common.xmlaccess.AbstractXmlRequest.execute(Unknown Source)
+	at com.ibm.etools.portal.server.tools.common.xmlaccess.request.InstallPredeployedPortletXmlRequest_61.execute(Unknown Source)
+	at com.ibm.etools.portal.server.tools.v8.internal.WPServerBehaviour.publishModules(Unknown Source)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(Unknown Source)
+	at com.ibm.etools.portal.server.tools.v8.internal.WPServerBehaviour.publish(Unknown Source)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(Unknown Source)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Unknown Source)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Unknown Source)
+
+
+XML Access Failure forhttp://localhost:10039/wps/config atWed May 15 11:29:56 CDT 2013
+Message:EJPXA0240E: The resource [web-app uid=com.ibm.jsfportlet.JSFPortlet.08349848e3.webmod] was not found in the portal, either because it does not exist or because you have not specified an identifying attribute in the XML input.
+Request:
+<?xml version="1.0" encoding="UTF-8"?>
+<request create-oids="true" type="update" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PortalConfig_8.0.0.xsd">
+  <portal action="locate">
+    <markup action="update" active="true" default-charset="UTF-8" mimetype="text/html" name="chtml">
+      <localedata charset="UTF-8" locale="sv">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="nl">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="en">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="cs">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="el">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="ar">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="hu">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="hr">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="zh">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="fr">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="ja">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="tr">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="pt_BR">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="zh_TW">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="fi">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="ru">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="iw">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="ko">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="it">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="pt">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="de">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="da">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="pl">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="es">
+        <title>chtml</title>
+      </localedata>
+      <localedata charset="UTF-8" locale="no">
+        <title>chtml</title>
+      </localedata>
+    </markup>
+    <web-app action="locate" uid="com.ibm.jsfportlet.JSFPortlet.08349848e3.webmod">
+      <portlet-app action="locate" name="com.ibm.jsfportlet.JSFPortlet.08349848e3">
+        <portlet action="locate" name="JSFPortlet" objectid="rationalportletJSFPortlet"/>
+      </portlet-app>
+    </web-app>
+    <content-node action="update" objectid="MyPortalParentPage" uniquename="ibm.portal.Home">
+      <supported-markup markup="html" update="set"/>
+      <supported-markup markup="chtml" update="set"/>
+    </content-node>
+    <content-node action="update" active="true" content-parentref="MyPortalParentPage" create-type="explicit" objectid="RationalPortletsParentPage" ordinal="first" type="label" uniquename="ibm.portal.rational.portlets">
+      <supported-markup markup="html" update="set"/>
+      <supported-markup markup="chtml" update="set"/>
+      <localedata locale="sv">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="nl">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="en">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="cs">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="el">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="ar">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="hu">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="hr">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="zh">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="fr">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="ja">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="tr">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="pt_BR">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="zh_TW">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="fi">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="ru">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="iw">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="ko">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="it">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="pt">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="de">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="da">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="pl">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="es">
+        <title>Rational Components</title>
+      </localedata>
+      <localedata locale="no">
+        <title>Rational Components</title>
+      </localedata>
+      <access-control>
+        <role actionset="Privileged User" update="set">
+          <mapping subjectid="all authenticated portal users" subjecttype="user_group" update="set"/>
+        </role>
+      </access-control>
+    </content-node>
+    <content-node action="update" active="true" content-parentref="RationalPortletsParentPage" create-type="explicit" ordinal="first" preserve-old-layout="true" type="staticpage" uniquename="ibm.portal.rational.portlets.JSFPortlet.d14c75e94f61d45e9199464216ad761d">
+      <supported-markup markup="html" update="set"/>
+      <localedata locale="sv">
+        <title>JSFPortlet</title>
+      </localedata>
+      <localedata locale="nl">
+        <title>JSFPortlet</title>
+      </localedata>
+      <localedata locale="en">
+        <title>JSFPortlet</title>
+      </localedata>
+      <localedata locale="cs">
+        <title>JSFPortlet</title>
+      </localedata>
+      <localedata locale="el">
+        <title>JSFPortlet</title>
+      </localedata>
+      <localedata locale="ar">
+        <title>JSFPortlet</title>
+      </localedata>
+      <localedata locale="hu">
+        <title>JSFPortlet</title>
+      </localedata>
+      <localedata locale="hr">
+        <title>JSFPortlet</title>
+      </localedata>
+      <localedata locale="zh">
+        <title>JSFPortlet</title>
+      </localedata>
+      <localedata locale="fr">
+        <title>JSFPortlet</title>
+      </localedata>
+      <localedata locale="ja">
+        <title>JSFPortlet</title>
+      </localedata>
+      <localedata locale="tr">
+        <title>JSFPortlet</title>
+      </localedata>
+      <localedata locale="pt_BR">
+        <title>JSFPortlet</title>
+      </localedata>
+      <localedata locale="zh_TW">
+        <title>JSFPortlet</title>
+      </localedata>
+      <localedata locale="fi">
+        <title>JSFPortlet</title>
+      </localedata>
+      <localedata locale="ru">
+        <title>JSFPortlet</title>
+      </localedata>
+      <localedata locale="iw">
+        <title>JSFPortlet</title>
+      </localedata>
+      <localedata locale="ko">
+        <title>JSFPortlet</title>
+      </localedata>
+      <localedata locale="it">
+        <title>JSFPortlet</title>
+      </localedata>
+      <localedata locale="pt">
+        <title>JSFPortlet</title>
+      </localedata>
+      <localedata locale="de">
+        <title>JSFPortlet</title>
+      </localedata>
+      <localedata locale="da">
+        <title>JSFPortlet</title>
+      </localedata>
+      <localedata locale="pl">
+        <title>JSFPortlet</title>
+      </localedata>
+      <localedata locale="es">
+        <title>JSFPortlet</title>
+      </localedata>
+      <localedata locale="no">
+        <title>JSFPortlet</title>
+      </localedata>
+      <parameter name="resourceaggregation.profile" type="string" update="set">profiles/profile_full.json</parameter>
+      <parameter name="com.ibm.portal.static.page.file.name.html" type="string" update="set">&lt;![CDATA[ layout.html ]]&gt; </parameter>
+      <parameter name="com.ibm.portal.layout.template.ref" type="string" update="set">&lt;![CDATA[ dav:fs-type1/themes/Portal8.0/layout-templates/1Column/ ]]&gt; </parameter>
+      <parameter name="com.ibm.portal.rendertype" type="string" update="set">SSA</parameter>
+      <access-control>
+        <role actionset="Privileged User" update="set">
+          <mapping subjectid="all authenticated portal users" subjecttype="user_group" update="set"/>
+        </role>
+      </access-control>
+      <component action="update" ordinal="-1" orientation="H" type="container" uniquename="rational.portlets.JSFPortlet.pageContainer">
+        <component action="update" ordinal="-1" orientation="V" type="container" uniquename="rational.portlets.JSFPortlet.projectVContainer.JSFPortlet">
+          <parameter name="com.ibm.portal.layoutnode.localname" type="string" update="set">&lt;![CDATA[ ibmMainContainer ]]&gt; </parameter>
+          <component action="update" ordinal="100" type="control" uniquename="rational.portlets.JSFPortlet.portletControl.JSFPortlet.JSFPortlet">
+            <portletinstance action="update" portletref="rationalportletJSFPortlet" uniquename="rational.portlets.JSFPortlet.portletInstance.JSFPortlet.JSFPortlet"/>
+          </component>
+        </component>
+      </component>
+    </content-node>
+  </portal>
+</request>
+
+
+Response:
+<?xml version="1.0" encoding="UTF-8"?>
+<request build="wp800CF02_001_30" type="update" version="8.0.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PortalConfig_8.0.0.xsd">
+      <status element="" result="failed">
+            <message id="EJPXA0240E">EJPXA0240E: The resource [web-app uid=com.ibm.jsfportlet.JSFPortlet.08349848e3.webmod] was not found in the portal, either because it does not exist or because you have not specified an identifying attribute in the XML input.</message>
+
+            <stacktrace>
+com.ibm.wps.command.xml.XmlCommandException: EJPXA0240E: The resource [web-app uid=com.ibm.jsfportlet.JSFPortlet.08349848e3.webmod] was not found in the portal, either because it does not exist or because you have not specified an identifying attribute in the XML input.
+	at com.ibm.wps.command.xml.ConfigItem.doUpdate(ConfigItem.java:567)
+	at com.ibm.wps.command.xml.UpdateEngine.processItem(UpdateEngine.java:216)
+	at com.ibm.wps.command.xml.UpdateEngine.updateTopLevelItem(UpdateEngine.java:171)
+	at com.ibm.wps.command.xml.XmlAccessHandler.fillObjectModel(XmlAccessHandler.java:330)
+	at com.ibm.wps.command.xml.XmlAccessHandler.endElement(XmlAccessHandler.java:212)
+	at org.apache.xerces.parsers.AbstractSAXParser.endElement(Unknown Source)
+	at org.apache.xerces.impl.xs.XMLSchemaValidator.endElement(Unknown Source)
+	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.SAXParserImpl.parse(Unknown Source)
+	at com.ibm.wps.command.xml.XmlUtils.parseSax(XmlUtils.java:283)
+	at com.ibm.wps.command.xml.Engine.forInputSourceSax(Engine.java:233)
+	at com.ibm.wps.command.xml.Engine.forInputSourceSax(Engine.java:174)
+	at com.ibm.wps.command.xml.XmlCommand.internalExecute(XmlCommand.java:242)
+	at com.ibm.wps.command.xml.XmlCommand.execute(XmlCommand.java:185)
+	at com.ibm.wps.command.xml.XmlCommandServlet.processInternal(XmlCommandServlet.java:332)
+	at com.ibm.wps.command.xml.XmlCommandServlet.process(XmlCommandServlet.java:309)
+	at com.ibm.wps.command.xml.XmlCommandServlet.doPost(XmlCommandServlet.java:234)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:595)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:668)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1225)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:775)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:457)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapperImpl.handleRequest(ServletWrapperImpl.java:178)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.invokeTarget(WebAppFilterChain.java:136)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:97)
+	at com.ibm.wps.project.filter.ProjectIdFilter.doFilterWithoutProjectID(ProjectIdFilter.java:331)
+	at com.ibm.wps.project.filter.ProjectIdFilter.doFilter(ProjectIdFilter.java:243)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:195)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:91)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.doFilter(WebAppFilterManager.java:928)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1025)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:87)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:908)
+	at com.ibm.ws.webcontainer.WSWebContainer.handleRequest(WSWebContainer.java:1662)
+	at com.ibm.ws.webcontainer.channel.WCChannelLink.ready(WCChannelLink.java:195)
+	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:453)
+	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.handleNewRequest(HttpInboundLink.java:515)
+	at com.ibm.ws.http.channel.inbound.impl.HttpInboundLink.processRequest(HttpInboundLink.java:306)
+	at com.ibm.ws.http.channel.inbound.impl.HttpICLReadCallback.complete(HttpICLReadCallback.java:83)
+	at com.ibm.ws.tcp.channel.impl.AioReadCompletionListener.futureCompleted(AioReadCompletionListener.java:166)
+	at com.ibm.io.async.AbstractAsyncFuture.invokeCallback(AbstractAsyncFuture.java:217)
+	at com.ibm.io.async.AsyncChannelFuture.fireCompletionActions(AsyncChannelFuture.java:161)
+	at com.ibm.io.async.AsyncFuture.completed(AsyncFuture.java:138)
+	at com.ibm.io.async.ResultHandler.complete(ResultHandler.java:204)
+	at com.ibm.io.async.ResultHandler.runEventProcessingLoop(ResultHandler.java:775)
+	at com.ibm.io.async.ResultHandler$2.run(ResultHandler.java:905)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:1691)
+
+</stacktrace>
+
+    </status>
+
+</request>
+
+
+
+!ENTRY com.ibm.etools.portal.server.tools.v8 4 0 2013-05-15 11:29:56.196
+!MESSAGE EJPXA0240E: The resource [web-app uid=com.ibm.jsfportlet.JSFPortlet.08349848e3.webmod] was not found in the portal, either because it does not exist or because you have not specified an identifying attribute in the XML input.
+!STACK 0
+com.ibm.etools.portal.server.tools.common.xmlaccess.XMLAccessException: EJPXA0240E: The resource [web-app uid=com.ibm.jsfportlet.JSFPortlet.08349848e3.webmod] was not found in the portal, either because it does not exist or because you have not specified an identifying attribute in the XML input.
+	at com.ibm.etools.portal.server.tools.common.xmlaccess.AbstractXmlRequest.execute(Unknown Source)
+	at com.ibm.etools.portal.server.tools.v8.internal.WPServerBehaviour.publishModules(Unknown Source)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(Unknown Source)
+	at com.ibm.etools.portal.server.tools.v8.internal.WPServerBehaviour.publish(Unknown Source)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(Unknown Source)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Unknown Source)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Unknown Source)
