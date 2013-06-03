@@ -1,5 +1,7 @@
-#Wed May 15 11:29:56 CDT 2013
+#Mon Jun 03 10:38:38 CDT 2013
 TestJSFEAR/TestJSF=TestJSF.war
 PDFBrowserEAR/PDFBrowser=PDFBrowser.war
+PDFParseTestEAR/PDF=PDF.war
 JSFPortletEAR/JSFPortlet=JSFPortlet.war
 FileManagerEAR/FileManager=FileManager.war
+PDFParseTestEAR/PDFParseTest=PDFParseTest.war

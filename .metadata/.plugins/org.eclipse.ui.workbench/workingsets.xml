@@ -5,16 +5,16 @@
 <workingSet editPageId="com.ibm.etools.aries.applicationWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1365449192133_2" label="OSGi Application Projects" name="OSGi Application Projects"/>
 <workingSet editPageId="com.ibm.etools.aries.compositeBundleWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1365449192136_3" label="OSGi Composite Bundle Projects" name="OSGi Composite Bundle Projects"/>
 <workingSet editPageId="com.ibm.etools.j2ee.ui.EARWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1365449192139_4" label="EAR Projects" name="EARWorkingSetPage.name">
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/FileManagerEAR" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/JSFPortletEAR" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/FileManagerEAR" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/PDFBrowserEAR" type="4"/>
 </workingSet>
 <workingSet editPageId="com.ibm.etools.j2ee.ui.AppClientWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1365449192143_5" label="Application Client Projects" name="AppClientWorkingSetPage.name"/>
 <workingSet editPageId="com.ibm.etools.j2ee.ui.EjbWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1365449192148_6" label="EJB Projects" name="EjbWorkingSetPage.name"/>
 <workingSet editPageId="com.ibm.etools.j2ee.ui.ConnectorWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1365449192153_7" label="Connector Projects" name="ConnectorWorkingSetPage.name"/>
 <workingSet editPageId="com.ibm.etools.j2ee.ui.WebWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1365449192158_8" label="Web Projects" name="NewWebWorkingSetPage.name">
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/FileManager" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/JSFPortlet" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/FileManager" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/PDFBrowser" type="4"/>
 </workingSet>
 <workingSet editPageId="com.ibm.etools.j2ee.ui.JPAWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1365449192165_9" label="JPA Projects" name="JPAWorkingSet.name"/>

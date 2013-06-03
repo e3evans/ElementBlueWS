@@ -1,8 +1,4 @@
 INDEX VERSION 1.2+C:\GitProjects\ElementBlueWS\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-2720330776.index
 1148782846.index
 2273384288.index
-174179002.index
-3773827389.index
-3229406986.index
 3674354368.index
