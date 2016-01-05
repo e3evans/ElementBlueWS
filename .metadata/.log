@@ -6020,3 +6020,20 @@ com.ibm.etools.portal.server.tools.common.xmlaccess.XMLAccessException: EJPXA024
 	at org.eclipse.wst.server.core.internal.Server.publishImpl(Unknown Source)
 	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Unknown Source)
 	at org.eclipse.core.internal.jobs.Worker.run(Unknown Source)
+!SESSION 2016-01-05 11:52:09.793 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.7.0 IBM J9 2.6 Windows 8.1 amd64-64 Compressed References 20150406_242981 (JIT enabled, AOT enabled)
+J9VM - R26_Java726_SR9_20150406_1443_B242981
+JIT  - tr.r11_20150401_88894
+GC   - R26_Java726_SR9_20150406_1443_B242981_CMPRSS
+J9CL - 20150406_242981
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.ibm.rational.rad.product.v9.ide
+Command-line arguments:  -data C:\Users\e3eva_000\projects\ElementBlueWS -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.rad.product.v9.ide
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-01-05 11:52:21.991
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\e3eva_000'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
